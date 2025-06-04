@@ -1,0 +1,6 @@
+CREATE TABLE akun (
+  url: https://www.chatbase.co/
+  nama : I KOMANG YOGA DINANTA
+  username: yogadinanta
+  email: yogadinanta@gmail.com
+);

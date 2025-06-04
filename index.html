@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/icon/tourism.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <header  class="navbar bg-t shadow-md fixed w-full top-0 left-0 z-50 bg-white/20 hover:bg-white/60 duration-500 shadow-xl">
+      <div class="container mx-auto flex justify-between items-center px-6 py-3 md:py-4">
+        
+        <!-- Logo -->
+        <div class="flex items-center gap-x-3 group">
+            <img class="w-24 transition-opacity group-hover:opacity-80" src="img/icon/icon_png_travelku.png" alt="Logo">
+            <!-- <div class="transition-colors duration-300">
+              <h1 class="text-/xl font-bold text-white group-hover:text-[#07203E] transition-colors duration-300">Trevelku indonesia</h1>
+              <p class="text-white text-sm opacity-60 group-hover:opacity-100 group-hover:text-[#07203E] transition-all duration-300">Be Great with Wonderful</p>
+            </div> -->
+          </div>
+    
+        <!-- Tombol Hamburger (Mobile) -->
+        <button id="menu-button" class="md:hidden focus:outline-none z-50 relative">
+          <svg id="hamburger-icon" class="w-7 h-7 text-[#07203E]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+          <svg id="close-icon" class="w-7 h-7 text-[#07203E] hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+    
+        <!-- Menu Navigasi -->
+        <nav id="menu" class="absolute top-20 left-0 w-full md:static md:w-auto md:bg-transparent bg-white md:flex hidden transition-transform duration-300 transform md:transform-none py-2">
+          <ul class="flex flex-col md:flex-row md:space-x-6 text-center md:text-left">
+            <li><a href="#" class="block py-3 px-6 text-gray-600 hover:text-red-500">Home</a></li>
+            <li><a href="#" class="block py-3 px-6 text-gray-600 hover:text-red-500">About</a></li>
+            <li><a href="#" class="block py-3 px-6 text-gray-600 hover:text-red-500">Services</a></li>
+            <li><a href="#" class="block py-3 px-6 bg-[#02a7c5] text-white rounded-xl hover:bg-red-500 transition duration-300 font-bold">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Overlay untuk menutup menu -->
+    <div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 md:hidden"></div>
+
+     <!-- HERO SECTION -->
+     <section class="relative flex items-center justify-center h-screen bg-cover bg-center pt-20" style="background-image: url('https://c4.wallpaperflare.com/wallpaper/179/915/685/photography-water-reflection-bali-wallpaper-preview.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div> <!-- Overlay Gelap -->
+      
+        <div class="container mx-auto text-center relative z-10">
+          <div class="w-full md:w-2/3 lg:w-1/2 mx-auto">
+            <h3 class="text-4xl md:text-5xl font-bold text-white">Journey Bali With Bali Wonderful</h3>
+            <p class="text-gray-200 mt-4 text-lg md:text-xl">
+              Nikmati keindahan Bali dengan pengalaman wisata terbaik, dengan wonderful bali
+            </p>
+            <a href="#" class="mt-6 inline-block bg-[#02a7c5] text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-transparent hover:border-2 hover:border-[#02a7c5] transition duration-300">
+              Booking Now
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- destination section -->
+      <section class="max-w-8xl mx-auto px-4 py-10">
+        <div class="bg-slate-100 rounded-lg p-6">
+            <h3 class="text-sm text-gray-600">01 / Attractions</h3>
+            <h1 class="text-3xl font-bold">Must-see attractions</h1>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
+                <!-- Card 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img class="w-full h-60 object-cover transition-transform duration-300 hover:scale-110" src="https://asset.kompas.com/crops/vdZhnhd65omILwbPWGk6C_Vdsp0=/0x0:780x520/1200x800/data/photo/2019/09/26/5d8c64544d656.jpg" alt="Muara Jambi">
+                    <div class="p-4">
+                        <h2 class="text-2xl font-bold">Mount Bromo</h2>
+                        <p class="text-gray-500 text-sm">East Java</p>
+                        <p class="text-gray-700 text-sm mt-2">An active volcano known for its stunning sunrise views over the sea of ​​sand and the silhouette of the mountains. Perfect for adventure tourism and photography...</p>
+                    </div>
+                    <button class="font-poppinsbg-transparent border border-[#02a7c5] text-[#02a7c5] hover:bg-[#02a7c5] hover:text-white py-2 px-3 float-end mx-3 my-2 rounded-lg transition duration-500">
+                      <a href="destination/bromo.html">Read More</a>
+                  </button>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img class="w-full h-60 object-cover" src="https://indonesia.travel/magnoliaPublic/.imaging/mte/mainTheme/960/dam/instagram/Amed-Beach-Bali.jpg/jcr:content/Amed%20Beach%20Bali.jpg" alt="Borobudur">
+                    <div class="p-4">
+                        <h2 class="text-2xl font-bold">Borobudur Temple</h2>
+                        <p class="text-gray-500 text-sm">BOROBUDUR</p>
+                        <p class="text-gray-700 text-sm mt-2">Dating from the 8th and 9th centuries, Borobudur is the world's largest Buddhist temple...</p>
+                    </div>
+                    <button class="bg-transparent border border-[#02a7c5] text-[#02a7c5] hover:bg-[#02a7c5] hover:text-white py-2 px-3 float-end mx-3 my-2 rounded-lg transition duration-500">
+                      Read More
+                  </button>
+                  
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                  <img class="w-full h-60 object-cover" src="https://indonesia.travel/magnoliaPublic/.imaging/mte/mainTheme/960/dam/instagram/Labuan-Bajo-in-East-Nusa-Tenggara.jpg/jcr:content/Labuan%20Bajo%20in%20East%20Nusa%20Tenggara.jpg" alt="Borobudur">
+                  <div class="p-4">
+                      <h2 class="text-2xl font-bold">Borobudur Temple</h2>
+                      <p class="text-gray-500 text-sm">BOROBUDUR</p>
+                      <p class="text-gray-700 text-sm mt-2">Dating from the 8th and 9th centuries, Borobudur is the world's largest Buddhist temple...</p>
+                  </div>
+                  <button class="bg-transparent border border-[#02a7c5] text-[#02a7c5] hover:bg-[#02a7c5] hover:text-white py-2 px-3 float-end mx-3 my-2 rounded-lg transition duration-500">
+                    Read More
+                </button>
+              </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                  <img class="w-full h-60 object-cover" src="https://indonesia.travel/magnoliaPublic/.imaging/mte/mainTheme/960/dam/instagram/Labuan-Bajo-in-East-Nusa-Tenggara.jpg/jcr:content/Labuan%20Bajo%20in%20East%20Nusa%20Tenggara.jpg" alt="Borobudur">
+                  <div class="p-4">
+                      <h2 class="text-2xl font-bold">Borobudur Temple</h2>
+                      <p class="text-gray-500 text-sm">BOROBUDUR</p>
+                      <p class="text-gray-700 text-sm mt-2">Dating from the 8th and 9th centuries, Borobudur is the world's largest Buddhist temple...</p>
+                  </div>
+                  <button class="bg-transparent border border-[#02a7c5] text-[#02a7c5] hover:bg-[#02a7c5] hover:text-white py-2 px-3 float-end mx-3 my-2 rounded-lg transition duration-500">
+                    Read More
+                </button>
+              </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                  <img class="w-full h-60 object-cover" src="https://indonesia.travel/magnoliaPublic/.imaging/mte/mainTheme/960/dam/instagram/Labuan-Bajo-in-East-Nusa-Tenggara.jpg/jcr:content/Labuan%20Bajo%20in%20East%20Nusa%20Tenggara.jpg" alt="Borobudur">
+                  <div class="p-4">
+                      <h2 class="text-2xl font-bold">Borobudur Temple</h2>
+                      <p class="text-gray-500 text-sm">BOROBUDUR</p>
+                      <p class="text-gray-700 text-sm mt-2">Dating from the 8th and 9th centuries, Borobudur is the world's largest Buddhist temple...</p>
+                  </div>
+                  <button class="bg-transparent border border-[#02a7c5] text-[#02a7c5] hover:bg-[#02a7c5] hover:text-white py-2 px-3 float-end mx-3 my-2 rounded-lg transition duration-500">
+                    Read More
+                </button>
+              </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                  <img class="w-full h-60 object-cover" src="https://indonesia.travel/magnoliaPublic/.imaging/mte/mainTheme/960/dam/instagram/Labuan-Bajo-in-East-Nusa-Tenggara.jpg/jcr:content/Labuan%20Bajo%20in%20East%20Nusa%20Tenggara.jpg" alt="Borobudur">
+                  <div class="p-4">
+                      <h2 class="text-2xl font-bold">Borobudur Temple</h2>
+                      <p class="text-gray-500 text-sm">BOROBUDUR</p>
+                      <p class="text-gray-700 text-sm mt-2">Dating from the 8th and 9th centuries, Borobudur is the world's largest Buddhist temple...</p>
+                  </div>
+                  <button class="bg-transparent border border-[#02a7c5] text-[#02a7c5] hover:bg-[#02a7c5] hover:text-white py-2 px-3 float-end mx-3 my-2 rounded-lg transition duration-500">
+                    Read More
+                </button>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="md:w-7xl mx-auto py-10 px-4">
+      <div class="md:flex md:items-center md:gap-0 relative">
+
+        <div class="md:w-1/2 relative z-0 px-6">
+          <img class="w-full h-full object-cover rounded-lg" src="https://cdn.prod.website-files.com/637879618d9dda491ac7c42c/638d4b2b5fd2fdc6f2b18256_0A6A9320-p-1600.webp" alt="" srcset="">
+        </div>
+
+       <!-- TEXT CONTENT -->
+    <div class="md:w-1/2 bg-slate-100 p-6 md:-ml-16 z-10 relative shadow-xl rounded-lg">
+      <h2 class="text-3xl font-bold mb-4">About Our Agency</h2>
+      <p class="text-gray-700 mb-4 hover:text-gray-400 duration-500">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam aliquam distinctio magni enim error commodi suscipit nobis alias nulla, itaque ex, vitae repellat amet neque est voluptatem iure maxime eius!
+      </p>
+      <p class="text-gray-700">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus in accusamus qui sequi nisi, sint magni, ipsam, porro nesciunt id veritatis quaerat ipsum consequatur laborum, provident veniam quibusdam placeat quam?
+      </p>
+      <div class="justify-center flex flex-wrap relative space-x-3 md:justify-center md:space-x-20 mb-3">
+        <img src="https://tour-asset.goldenrama.com/be4ac92b-674e-4f7c-8f28-da0194eb88fc-Citilink.webp" alt="" srcset="">
+        <img src="https://tour-asset.goldenrama.com/4368c971-d059-4b4e-84e1-42b63f5c5e50-Lion%20AIr.webp" alt="" srcset="">
+        <img src="https://tour-asset.goldenrama.com/0b1c385c-5641-41f4-8886-3cf3f2040a90-Ga.webp" alt="" srcset="">
+        <img src="https://tour-asset.goldenrama.com/bbbfb4a0-dfbe-4c26-8aa3-9cb5e7595bde-BatikAir.webp" alt="" srcset="">
+    </div>
+      </div>
+      
+    </section>
+    
+<footer class="bg-slate-200 px-6 py-8 rounded-lg max-w-8xl mx-auto">
+  <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mx-4">
+    <div class="flex flex-col items-start">
+      <img class="w-28 mb-2" src="img/icon/icon_png_travelku.png" alt="">
+      <p class="text-gray-600 text-sm py-2 max-w-sm">The best helicopter to discover the beauty of Bali from a new angle</p>
+    </div>
+    <div class="bg-slate-700 text-white px-6 py-2 opacity-1 rounded-md w-full md:w-auto text-center">
+      <p class="">Copyright 2025</p>
+    </div>
+    </div>
+  </div>
+</footer>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"]
+            }
+          }
+        }
+      };
+    </script>
+      <script>
+        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="eCrjiHM3xVYA5O3lMeJdt";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+        </script>
+        <script>
+            document.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+});
+
+        </script>
+      <script src="javascript/main.js"></script>
+  </body>
+</html>
