@@ -1,255 +1,369 @@
 <!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./img/icon/icon-main.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <meta name="description" content="Wonderful Bali - Explore the beauty of Bali with our travel agency. Discover attractions, culture, and unforgettable experiences in Bali.">
-    <title>Wonderful Bali</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <style>
-     html {
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./img/icon/icon-main.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- flowbite cdn -->
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Flowbite CSS (optional jika hanya pakai komponen JS) -->
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@2.2.1/dist/flowbite.min.css" />
+
+  <!-- Flowbite JS (WAJIB) -->
+  <script src="https://unpkg.com/flowbite@2.2.1/dist/flowbite.min.js"></script>
+
+  <meta name="description"
+    content="Wonderful Bali - Explore the beauty of Bali with our travel agency. Discover attractions, culture, and unforgettable experiences in Bali.">
+  <title>Wonderful Bali</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+  html {
     scroll-behavior: smooth;
   }
-  </style>
+</style>
+
 <body class="font-poppins">
-    <header  class="navbar bg-t shadow-md fixed w-full top-0 left-0 z-50 bg-white/20 hover:bg-white/60 duration-500 shadow-xl">
-      <div class="container mx-auto flex justify-between items-center px-6 py-3 md:py-4">
-        
-        <div class="flex items-center gap-x-3 group">
-            <img class="w-24 transition-opacity group-hover:opacity-80" src="img/icon/icon_png_travelku.png" alt="Logo">
-          </div>
-    
-        <!-- Tombol Hamburger (Mobile) -->
-        <button id="menu-button" class="md:hidden focus:outline-none z-50 relative">
-          <svg id="hamburger-icon" class="w-7 h-7 text-[#07203E]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-          </svg>
-          <svg id="close-icon" class="w-7 h-7 text-[#07203E] hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
-        </button>
-    
-        <!-- Menu Navigasi -->
-        <nav id="menu" class="absolute top-20 left-0 w-full md:static md:w-auto md:bg-transparent bg-white md:flex hidden transition-transform duration-300 transform md:transform-none py-2">
-          <ul class="flex flex-col md:flex-row md:space-x-6 text-center md:text-left">
-            <li><a href="#" class="block py-3 px-6 text-gray-600 hover:text-red-500">Home</a></li>
-            <li><a href="#" class="block py-3 px-6 text-gray-600 hover:text-red-500">About</a></li>
-            <li><a href="#service" class="block py-3 px-6 text-gray-600 hover:text-red-500">Services</a></li>
-            <li><a href="./assets/kontak.html" class="block py-3 px-6 bg-[#02a7c5] text-white rounded-xl hover:bg-red-500 transition duration-300 font-bold">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 md:hidden"></div>
 
-     <!-- HERO SECTION -->
-     <section class="relative flex items-center justify-center h-screen bg-cover bg-center pt-20" style="background-image: url('https://c4.wallpaperflare.com/wallpaper/509/864/903/bali-garuda-wisnu-kencana-hindu-indonesia-wallpaper-preview.jpg');">
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div> 
-        <div class="container mx-auto text-center relative z-10">
-          <div data-aos="fade-up" class="w-full md:w-2/3 lg:w-1/2 mx-auto">
-            <h3 class="text-4xl md:text-5xl font-bold text-white">Journey Bali With Bali Wonderful</h3>
-            <p data-aos="fade-up" class="text-gray-200 mt-4 text-lg md:text-xl">
-            Experience the enchanting beauty of Bali through unforgettable travel adventures
+
+
+
+
+  <header
+    class="navbar bg-t shadow-md fixed w-full top-0 left-0 z-50 bg-white/20 hover:bg-white/60 duration-500 shadow-xl">
+    <div class="container mx-auto flex justify-between items-center px-6 py-3 md:py-4">
+
+      <div class="flex items-center gap-x-3 group">
+        <img class="w-24 transition-opacity group-hover:opacity-80" src="img/icon/icon_png_travelku.png" alt="Logo">
+      </div>
+
+      <!-- Tombol Hamburger (Mobile) -->
+      <button id="menu-button" class="md:hidden focus:outline-none z-50 relative">
+        <svg id="hamburger-icon" class="w-7 h-7 text-[#07203E]" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+        <svg id="close-icon" class="w-7 h-7 text-[#07203E] hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+
+      <!-- Menu Navigasi -->
+      <nav id="menu"
+        class="absolute top-20 left-0 w-full md:static md:w-auto md:bg-transparent bg-white md:flex hidden transition-transform duration-300 transform md:transform-none py-2">
+        <ul class="flex flex-col md:flex-row md:space-x-6 text-center md:text-left">
+          <li><a href="#" class="block py-3 px-6 text-gray-600 hover:text-red-500">Home</a></li>
+          <li><a href="#" class="block py-3 px-6 text-gray-600 hover:text-red-500">About</a></li>
+          <li><a href="#service" class="block py-3 px-6 text-gray-600 hover:text-red-500">Services</a></li>
+          <li><a href="./assets/kontak.html"
+              class="block py-3 px-6 bg-[#02a7c5] text-white rounded-xl hover:bg-red-500 transition duration-300 font-bold">
+              Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 md:hidden"></div>
+
+  <!-- HERO SECTION -->
+  <section class="relative flex items-center justify-center h-screen bg-cover bg-center pt-20"
+    style="background-image: url('https://www.rentalmobilbali.net/wp-content/uploads/2025/03/tempat-wisata-gwk-bali-sunset-aerial.webp');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="container mx-auto text-center relative z-10">
+      <div data-aos="fade-up" class="w-full md:w-2/3 lg:w-1/2 mx-auto">
+        <h3 class="text-4xl md:text-5xl font-bold text-white">Journey Bali With Bali Wonderful</h3>
+        <p data-aos="fade-up" class="text-gray-200 mt-4 text-lg md:text-xl">
+          Experience the enchanting beauty of Bali through unforgettable travel adventures
+        </p>
+        <a data-aos="fade-up" href="#"
+          class="mt-6 inline-block bg-[#02a7c5] text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-transparent hover:border-2 hover:border-[#02a7c5] transition duration-300">
+          <i class="fa-brands fa-whatsapp"></i> Booking Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="service" class="max-w-full mx-auto px-4 py-10" data-aos="fade-up">
+    <div class="bg-slate-100 rounded-lg p-6" data-aos="fade-up" data-aos-delay="100">
+      <h3 class="text-sm text-gray-600" data-aos="fade-right">01 / Attractions</h3>
+      <h1 class="text-3xl font-bold" data-aos="fade-left">Must-see attractions</h1>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden" data-aos="zoom-in">
+          <div class="relative w-full h-60 overflow-hidden group">
+            <img src="img/gwk.jpg" alt="Garuda Wisnu Kencana"
+              class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0">
+            <img src="img/GWK-1.jpg" alt="Muara Jambi Hover"
+              class="absolute inset-0 w-full h-full object-cover transition-opacity transition-all  duration-500 ese-in-out opacity-0 group-hover:opacity-100">
+          </div>
+          <div class="p-4">
+            <h2 class="text-2xl font-bold">Garuda Wisnu Kencana</h2>
+            <p class="text-gray-500 text-sm"><i class="fa-solid fa-location-dot"></i> Badung, South Kuta</p>
+            <p class="text-gray-700 text-sm mt-2">Garuda Wisnu Kencana (GWK) is a cultural park featuring one of the
+              tallest statues in the world, depicting the Hindu god Vishnu riding the mythical bird Garuda. Located in
+              South Kuta, it celebrates Balinese heritage through art, culture, and breathtaking views.</p>
+
+          </div>
+          <button
+            class="font-poppins bg-transparent border border-[#02a7c5] text-[#02a7c5] hover:bg-[#02a7c5] hover:text-white py-2 px-3 float-end mx-3 my-2 rounded-lg transition duration-500">
+            <a href="assets/artikel/gwk.html">Read More</a>
+          </button>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden" data-aos="zoom-in">
+          <div class="relative w-full h-60 overflow-hidden group">
+            <img src="img/jimbaran_beach.webp" alt="Garuda Wisnu Kencana"
+              class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0">
+            <img src="img/jimbaran_beach_1.jpg" alt="Muara Jambi Hover"
+              class="absolute inset-0 w-full h-full object-cover transition-opacity transition-all  duration-500 ese-in-out opacity-0 group-hover:opacity-100">
+          </div>
+          <div class="p-4">
+            <h2 class="text-2xl font-bold">Jimbaran Beach</h2>
+            <p class="text-gray-500 text-sm"><i class="fa-solid fa-location-dot"></i> Badung, South Kuta</p>
+            <p class="text-gray-700 text-sm mt-2">Jimbaran Beach is famous for its golden sunsets, calm waves, and
+              beachfront seafood dining. Located in South Kuta, it's the perfect place to relax, enjoy fresh grilled
+              fish, and experience Bali’s coastal charm.</p>
+
+          </div>
+          <button
+            class="font-poppins bg-transparent border border-[#02a7c5] text-[#02a7c5] hover:bg-[#02a7c5] hover:text-white py-2 px-3 float-end mx-3 my-2 rounded-lg transition duration-500">
+            <a href="assets/artikel/jimbaran_beach.html">Read More</a>
+          </button>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden" data-aos="zoom-in">
+          <div class="relative w-full h-60 overflow-hidden group">
+            <img src="img/gembleng-waterfall.png" alt="Garuda Wisnu Kencana"
+              class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0">
+            <img src="img/gembleng-waterfall-1.jpg" alt="Muara Jambi Hover"
+              class="absolute inset-0 w-full h-full object-cover transition-opacity transition-all  duration-500 ese-in-out opacity-0 group-hover:opacity-100">
+          </div>
+          <div class="p-4">
+            <h2 class="text-2xl font-bold">Gembleng Waterfall</h2>
+            <p class="text-gray-500 text-sm"><i class="fa-solid fa-location-dot"></i> Karangasem, Sidemen</p>
+            <p class="text-gray-700 text-sm mt-2">Gembleng Waterfall is a hidden gem nestled in the tranquil hills of
+              Sidemen, Bali. Known for its natural infinity pool and serene atmosphere, it's a perfect spot for a
+              peaceful retreat and to immerse in Bali’s untouched natural beauty.</p>
+
+          </div>
+          <button
+            class="font-poppins bg-transparent border border-[#02a7c5] text-[#02a7c5] hover:bg-[#02a7c5] hover:text-white py-2 px-3 float-end mx-3 my-2 rounded-lg transition duration-500">
+            <a href="assets/artikel/gemleng_waterfall.html">Read More</a>
+          </button>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden" data-aos="zoom-in">
+          <div class="relative w-full h-60 overflow-hidden group">
+            <img src="img/candi_prambanan.jpg" alt="Garuda Wisnu Kencana"
+              class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0">
+            <img src="img/candi_prambanan2.jpeg" alt="Muara Jambi Hover"
+              class="absolute inset-0 w-full h-full object-cover transition-opacity transition-all  duration-500 ese-in-out opacity-0 group-hover:opacity-100">
+          </div>
+          <div class="p-4">
+            <h2 class="text-2xl font-bold">Candi Prambanan</h2>
+            <p class="text-gray-500 text-sm"><i class="fa-solid fa-location-dot"></i> Yogyakarta, Kranggan</p>
+            <p class="text-gray-700 text-sm mt-2">Prambanan Temple is a majestic 9th-century Hindu temple complex
+              dedicated to the Trimurti: Brahma, Vishnu, and Shiva. Located near Yogyakarta, it is a UNESCO World
+              Heritage Site and a remarkable example of ancient Javanese architecture and spiritual heritage.</p>
+          </div>
+
+          <button
+            class="font-poppins bg-transparent border border-[#02a7c5] text-[#02a7c5] hover:bg-[#02a7c5] hover:text-white py-2 px-3 float-end mx-3 my-2 rounded-lg transition duration-500">
+            <a href="assets/artikel/candi_prambanan.html">Read More</a>
+          </button>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden" data-aos="zoom-in">
+          <div class="relative w-full h-60 overflow-hidden group">
+            <img src="img/gilitrawangan_beach1.webp" alt="Garuda Wisnu Kencana"
+              class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0">
+            <img src="img/gilitrrawanagan_beach.jpg" alt="Muara Jambi Hover"
+              class="absolute inset-0 w-full h-full object-cover transition-opacity transition-all  duration-500 ese-in-out opacity-0 group-hover:opacity-100">
+          </div>
+          <div class="p-4">
+            <h2 class="text-2xl font-bold">Gili Trawangan</h2>
+            <p class="text-gray-500 text-sm"><i class="fa-solid fa-location-dot"></i> Lombok, West Nusa Tenggara</p>
+            <p class="text-gray-700 text-sm mt-2">Gili Trawangan is a tropical paradise known for its white sandy
+              beaches, vibrant coral reefs, and lively nightlife. Located off the coast of Lombok, it's a perfect escape
+              for snorkeling, diving, and relaxing in a tranquil island atmosphere.</p>
+          </div>
+
+          <button
+            class="font-poppins bg-transparent border border-[#02a7c5] text-[#02a7c5] hover:bg-[#02a7c5] hover:text-white py-2 px-3 float-end mx-3 my-2 rounded-lg transition duration-500">
+            <a href="assets/artikel/gili_trawangan.html">Read More</a>
+          </button>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden" data-aos="zoom-in">
+          <div class="relative w-full h-60 overflow-hidden group">
+            <img src="img/labuan_bajo.jpg" alt="Garuda Wisnu Kencana"
+              class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0">
+            <img src="img/labuan_bajo1.webp" alt="Muara Jambi Hover"
+              class="absolute inset-0 w-full h-full object-cover transition-opacity transition-all  duration-500 ese-in-out opacity-0 group-hover:opacity-100">
+          </div>
+          <div class="p-4">
+            <h2 class="text-2xl font-bold">Labuan Bajo</h2>
+            <p class="text-gray-500 text-sm"><i class="fa-solid fa-location-dot"></i> Flores Island, East Nusa Tenggara
             </p>
-            <a data-aos="fade-up" href="#" class="mt-6 inline-block bg-[#02a7c5] text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-transparent hover:border-2 hover:border-[#02a7c5] transition duration-300">
-              Booking Now
-            </a>
+            <p class="text-gray-700 text-sm mt-2">Labuan Bajo is the gateway to the natural wonders of East Nusa
+              Tenggara, known for its breathtaking landscapes, crystal-clear waters, and as the main access point to
+              Komodo National Park and its stunning marine biodiversity.</p>
+
           </div>
+          <button
+            class="font-poppins bg-transparent border border-[#02a7c5] text-[#02a7c5] hover:bg-[#02a7c5] hover:text-white py-2 px-3 float-end mx-3 my-2 rounded-lg transition duration-500">
+            <a href="assets/artikel/labuan_bajo.html">Read More</a>
+          </button>
         </div>
-      </section>
 
-
-<section id="service" class="max-w-8xl mx-auto px-4 py-10" data-aos="fade-up">
-  <div class="bg-slate-100 rounded-lg p-6" data-aos="fade-up" data-aos-delay="100">
-    <h3 class="text-sm text-gray-600" data-aos="fade-right">01 / Attractions</h3>
-    <h1 class="text-3xl font-bold" data-aos="fade-left">Must-see attractions</h1>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
-
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden" data-aos="zoom-in">
-       <div class="relative w-full h-60 overflow-hidden group">
-  <img src="img/gwk.jpg" alt="Garuda Wisnu Kencana"
-    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0">
-  <img src="img/GWK-1.jpg" alt="Muara Jambi Hover"
-    class="absolute inset-0 w-full h-full object-cover transition-opacity transition-all  duration-500 ese-in-out opacity-0 group-hover:opacity-100">
-</div>
-        <div class="p-4">
-<h2 class="text-2xl font-bold">Garuda Wisnu Kencana</h2>
-<p class="text-gray-500 text-sm">Badung, South Kuta</p>
-<p class="text-gray-700 text-sm mt-2">Garuda Wisnu Kencana (GWK) is a cultural park featuring one of the tallest statues in the world, depicting the Hindu god Vishnu riding the mythical bird Garuda. Located in South Kuta, it celebrates Balinese heritage through art, culture, and breathtaking views.</p>
-
-        </div>
-        <button class="font-poppins bg-transparent border border-[#02a7c5] text-[#02a7c5] hover:bg-[#02a7c5] hover:text-white py-2 px-3 float-end mx-3 my-2 rounded-lg transition duration-500">
-          <a href="assets/artikel/gwk.html">Read More</a>
-        </button>
       </div>
-
-<!-- CARD 2 -->
-<div class="bg-white shadow-lg rounded-lg overflow-hidden" data-aos="zoom-in">
-       <div class="relative w-full h-60 overflow-hidden group">
-  <img src="img/jimbaran_beach.webp" alt="Garuda Wisnu Kencana"
-    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0">
-  <img src="img/jimbaran_beach_1.jpg" alt="Muara Jambi Hover"
-    class="absolute inset-0 w-full h-full object-cover transition-opacity transition-all  duration-500 ese-in-out opacity-0 group-hover:opacity-100">
-</div>
-        <div class="p-4">
- <h2 class="text-2xl font-bold">Jimbaran Beach</h2>
-<p class="text-gray-500 text-sm">Badung, South Kuta</p>
-<p class="text-gray-700 text-sm mt-2">Jimbaran Beach is famous for its golden sunsets, calm waves, and beachfront seafood dining. Located in South Kuta, it's the perfect place to relax, enjoy fresh grilled fish, and experience Bali’s coastal charm.</p>
-
-        </div>
-        <button class="font-poppins bg-transparent border border-[#02a7c5] text-[#02a7c5] hover:bg-[#02a7c5] hover:text-white py-2 px-3 float-end mx-3 my-2 rounded-lg transition duration-500">
-          <a href="assets/artikel/jimbaran_beach.html">Read More</a>
-        </button>
-      </div>
-
-<!-- CARD 3 -->
-<div class="bg-white shadow-lg rounded-lg overflow-hidden" data-aos="zoom-in">
-       <div class="relative w-full h-60 overflow-hidden group">
-  <img src="img/gembleng-waterfall.png" alt="Garuda Wisnu Kencana"
-    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0">
-  <img src="img/gembleng-waterfall-1.jpg" alt="Muara Jambi Hover"
-    class="absolute inset-0 w-full h-full object-cover transition-opacity transition-all  duration-500 ese-in-out opacity-0 group-hover:opacity-100">
-</div>
-        <div class="p-4">
-<h2 class="text-2xl font-bold">Gembleng Waterfall</h2>
-<p class="text-gray-500 text-sm">Karangasem, Sidemen</p>
-<p class="text-gray-700 text-sm mt-2">Gembleng Waterfall is a hidden gem nestled in the tranquil hills of Sidemen, Bali. Known for its natural infinity pool and serene atmosphere, it's a perfect spot for a peaceful retreat and to immerse in Bali’s untouched natural beauty.</p>
-
-        </div>
-        <button class="font-poppins bg-transparent border border-[#02a7c5] text-[#02a7c5] hover:bg-[#02a7c5] hover:text-white py-2 px-3 float-end mx-3 my-2 rounded-lg transition duration-500">
-          <a href="assets/artikel/gemleng_waterfall.html">Read More</a>
-        </button>
-      </div>
-
-    <!-- CARD 4 -->
-<div class="bg-white shadow-lg rounded-lg overflow-hidden" data-aos="zoom-in">
-       <div class="relative w-full h-60 overflow-hidden group">
-  <img src="img/candi_prambanan.jpg" alt="Garuda Wisnu Kencana"
-    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0">
-  <img src="img/candi_prambanan2.jpeg" alt="Muara Jambi Hover"
-    class="absolute inset-0 w-full h-full object-cover transition-opacity transition-all  duration-500 ese-in-out opacity-0 group-hover:opacity-100">
-</div>
-<div class="p-4">
-  <h2 class="text-2xl font-bold">Candi Prambanan</h2>
-  <p class="text-gray-500 text-sm">Yogyakarta, Kranggan</p>
-  <p class="text-gray-700 text-sm mt-2">Prambanan Temple is a majestic 9th-century Hindu temple complex dedicated to the Trimurti: Brahma, Vishnu, and Shiva. Located near Yogyakarta, it is a UNESCO World Heritage Site and a remarkable example of ancient Javanese architecture and spiritual heritage.</p>
-</div>
-
-        <button class="font-poppins bg-transparent border border-[#02a7c5] text-[#02a7c5] hover:bg-[#02a7c5] hover:text-white py-2 px-3 float-end mx-3 my-2 rounded-lg transition duration-500">
-          <a href="assets/artikel/candi_prambanan.html">Read More</a>
-        </button>
-      </div>
-
-   <!-- CARD 5 -->
-<div class="bg-white shadow-lg rounded-lg overflow-hidden" data-aos="zoom-in">
-       <div class="relative w-full h-60 overflow-hidden group">
-  <img src="img/gilitrawangan_beach1.webp" alt="Garuda Wisnu Kencana"
-    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0">
-  <img src="img/gilitrrawanagan_beach.jpg" alt="Muara Jambi Hover"
-    class="absolute inset-0 w-full h-full object-cover transition-opacity transition-all  duration-500 ese-in-out opacity-0 group-hover:opacity-100">
-</div>
-<div class="p-4">
-  <h2 class="text-2xl font-bold">Gili Trawangan</h2>
-  <p class="text-gray-500 text-sm">Lombok, West Nusa Tenggara</p>
-  <p class="text-gray-700 text-sm mt-2">Gili Trawangan is a tropical paradise known for its white sandy beaches, vibrant coral reefs, and lively nightlife. Located off the coast of Lombok, it's a perfect escape for snorkeling, diving, and relaxing in a tranquil island atmosphere.</p>
-</div>
-
-        <button class="font-poppins bg-transparent border border-[#02a7c5] text-[#02a7c5] hover:bg-[#02a7c5] hover:text-white py-2 px-3 float-end mx-3 my-2 rounded-lg transition duration-500">
-          <a href="assets/artikel/gili_trawangan.html">Read More</a>
-        </button>
-      </div>
-
-   <!-- CARD 6 -->
-<div class="bg-white shadow-lg rounded-lg overflow-hidden" data-aos="zoom-in">
-       <div class="relative w-full h-60 overflow-hidden group">
-  <img src="img/labuan_bajo.jpg" alt="Garuda Wisnu Kencana"
-    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0">
-  <img src="img/labuan_bajo1.webp" alt="Muara Jambi Hover"
-    class="absolute inset-0 w-full h-full object-cover transition-opacity transition-all  duration-500 ese-in-out opacity-0 group-hover:opacity-100">
-</div>
-        <div class="p-4">
-<h2 class="text-2xl font-bold">Labuan Bajo</h2>
-<p class="text-gray-500 text-sm">Flores Island, East Nusa Tenggara</p>
-<p class="text-gray-700 text-sm mt-2">Labuan Bajo is the gateway to the natural wonders of East Nusa Tenggara, known for its breathtaking landscapes, crystal-clear waters, and as the main access point to Komodo National Park and its stunning marine biodiversity.</p>
-
-        </div>
-        <button class="font-poppins bg-transparent border border-[#02a7c5] text-[#02a7c5] hover:bg-[#02a7c5] hover:text-white py-2 px-3 float-end mx-3 my-2 rounded-lg transition duration-500">
-          <a href="assets/artikel/labuan_bajo.html">Read More</a>
-        </button>
-      </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <section class="md:w-7xl mx-auto py-10 px-4" >
-      <div class="md:flex md:items-center md:gap-0 relative">
-
-        <div class="md:w-1/2 relative z-0 px-6">
-          <img class="w-full h-full object-cover rounded-lg" src="https://t4.ftcdn.net/jpg/06/12/25/75/360_F_612257593_76WUxysDvyyOfBkbqJR4sIJjliauXBES.jpg" alt="" srcset="">
-        </div>
-    <div class="md:w-1/2 bg-slate-100 p-6 md:-ml-16 z-10 relative shadow-xl rounded-lg" data-aos="fade-right">
-            <h3 class="text-sm text-gray-600">02 / Agency</h3>
-      <h2 class="text-3xl font-bold mb-4">About Our Agency</h2>
-      <p class="text-gray-700 mb-4 hover:text-gray-400 duration-500">
-        Discover the excellence of our agency trusted by top airlines like Citilink, Lion Air, Garuda Indonesia, and Batik Air. With a commitment to quality and customer satisfaction, we strive to deliver exceptional travel experiences every step of the way.
-      </p>
-      <div class="justify-center flex flex-wrap relative space-x-3 md:justify-center md:space-x-20 mb-3 hover:bg-gray-200 rounded-lg duration-500">
-        <img src="./img/icon/Batik_Air.webp" alt="" srcset="">
-        <img src="./img/icon/Ctlink.webp" alt="" srcset="">
-        <img src="./img/icon/garuda_indonesia.webp" alt="" srcset="">
-        <img src="./img/icon/Lion_Air.webp" alt="" srcset="">
     </div>
-      </div>
-      
-    </section>
+  </section>
 
-<footer class="bg-slate-200 px-6 py-8 rounded-lg max-w-8xl mx-auto">
-  <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mx-4">
-    <div class="flex flex-col items-start">
-      <img class="w-28 mb-2" src="img/icon/icon_png_travelku.png" alt="">
-      <p class="text-gray-600 text-sm py-2 max-w-sm">The best agency travel you in bali</p>
+  <section class="md:w-7xl mx-auto py-10 px-4">
+    <div class="md:flex md:items-center md:gap-0 relative">
+
+      <div class="md:w-1/2 relative z-0 px-6">
+        <img class="w-full h-full object-cover rounded-lg"
+          src="https://t4.ftcdn.net/jpg/06/12/25/75/360_F_612257593_76WUxysDvyyOfBkbqJR4sIJjliauXBES.jpg" alt=""
+          srcset="">
+      </div>
+      <div class="md:w-1/2 bg-slate-100 p-6 md:-ml-16 z-10 relative shadow-xl rounded-lg" data-aos="fade-right">
+        <h3 class="text-sm text-gray-600">02 / Agency</h3>
+        <h2 class="text-3xl font-bold mb-4">About Our Agency</h2>
+        <p class="text-gray-700 mb-4 hover:text-gray-400 duration-500">
+          Discover the excellence of our agency trusted by top airlines like Citilink, Lion Air, Garuda Indonesia, and
+          Batik Air. With a commitment to quality and customer satisfaction, we strive to deliver exceptional travel
+          experiences every step of the way.
+        </p>
+        <div
+          class="justify-center flex flex-wrap relative space-x-3 md:justify-center md:space-x-20 mb-3 hover:bg-gray-200 rounded-lg duration-500">
+          <img src="./img/icon/Batik_Air.webp" alt="" srcset="">
+          <img src="./img/icon/Ctlink.webp" alt="" srcset="">
+          <img src="./img/icon/garuda_indonesia.webp" alt="" srcset="">
+          <img src="./img/icon/Lion_Air.webp" alt="" srcset="">
+        </div>
+      </div>
+  </section>
+
+  <!-- RIVEW CUSTOMER -->
+  <section class="max-w-full mx-auto px-4 py-2 mb-4" data-aos="fade-up">
+    <div class="bg-slate-100 rounded-lg p-6">
+ <h3 class="text-sm text-gray-600">02 / Agency</h3>
+        <h2 class="text-3xl font-bold mb-4">About Our Agency</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://c4.wallpaperflare.com/wallpaper/509/864/903/bali-garuda-wisnu-kencana-hindu-indonesia-wallpaper-preview.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
+        </div>
     </div>
-    <div class="bg-slate-700 text-white px-6 py-2 opacity-1 rounded-md w-full md:w-auto text-center">
-      <p class="">Copyright @travelku 2025</p>
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
+        </div>
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
+        </div>
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+    </div>
+  </section>
+
+    <!-- Reviews -->
+<section id="review" class="container mx-auto px-6 py-20" data-aos="fade-up">
+    <h2 class="text-2xl font-bold mb-6 text-center">Customer Reviews</h2>
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-97db08e9-7d92-4764-9b85-fe0214fb9284" data-elfsight-app-lazy></div>
+  </section>
+
+  <footer class="bg-slate-200 px-6 py-8 rounded-lg max-w-full mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mx-4">
+      <div class="flex flex-col items-start">
+        <img class="w-28 mb-2" src="img/icon/icon_png_travelku.png" alt="">
+        <p class="text-gray-600 text-sm py-2 max-w-sm">The best agency travel you in bali</p>
+      </div>
+      <div class="bg-slate-700 text-white px-6 py-2 opacity-1 rounded-md w-full md:w-auto text-center">
+        <p class="">Copyright @travelku 2025</p>
+      </div>
     </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              poppins: ["Poppins", "sans-serif"]
-            }
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ["Poppins", "sans-serif"]
           }
         }
-      };
-    </script>
-      <script>
-        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="eCrjiHM3xVYA5O3lMeJdt";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-        </script>
-        <script>
-            document.addEventListener("contextmenu", function (event) {
-    event.preventDefault();
-});
+      }
+    };
+  </script>
+  <script>
+    (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "eCrjiHM3xVYA5O3lMeJdt"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+  </script>
+  <script>
+    document.addEventListener("contextmenu", function (event) {
+      event.preventDefault();
+    });
 
-        </script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000, 
-    once: true,     
-  });
-</script>
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
 
-      <script src="javascript/main.js"></script>
-  </body>
+  <script src="javascript/main.js"></script>
+</body>
+
 </html>
