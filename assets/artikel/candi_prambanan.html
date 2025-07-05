@@ -1,228 +1,233 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Volcanoes and Temples</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    #destinasiScroll {
+      scrollbar-width: none;
+    }
+    #destinasiScroll::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
 </head>
-<style>
-  html {
-  scroll-behavior: smooth;
-}
-
-</style>
 <body class="bg-white text-gray-800 font-sans">
 
-  <div class="max-w-7xl mx-auto p-4">
-    
-
-
-  <!-- Container Utama -->
-    <div class="flex flex-col md:flex-row gap-6 items-start">
-      
-      <!-- Gambar Besar -->
-      <div class="flex-1 rounded-xl overflow-hidden max-h-[700px] min-h-[400px] w-full md:w-[700px]">
-        <img id="mainImage"
-         src="https://cdn.prod.website-files.com/63854a5ff7ce0b78ba75a5e5/647f7a249bdfced2e4311f4d_exclusive-volcano-and-temples-tour-id-p-1600.jpeg"
-         alt="Volcano"
-         class="w-full h-full object-cover transition-all duration-300 min-h-[400px]">
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-white/20 hover:bg-white/60 shadow-xl duration-500">
+    <div class="container mx-auto flex justify-between items-center px-6 py-4">
+      <div class="flex items-center gap-3 group">
+        <img class="w-24 transition-opacity group-hover:opacity-80" src="/img/icon/icon_png_travelku.png" alt="Logo Travelku">
       </div>
-
-      <!-- Gambar Kecil -->
-      <div class="grid grid-cols-2 md:grid-cols-1 gap-4 w-full md:w-[100px]">
-        <img src="https://cdn.prod.website-files.com/63854a5ff7ce0b78ba75a5e5/638985ce538b8f1bcbd13cb3_Rectangle%2016-2-min.jpg"
-             alt="Rice"
-             class="thumb rounded-xl w-full h-[100px] object-cover cursor-pointer hover:opacity-80 transition">
-        
-        <img src="https://cdn.prod.website-files.com/63854a5ff7ce0b78ba75a5e5/647f7a249bdfced2e4311f4d_exclusive-volcano-and-temples-tour-id-p-1600.jpeg"
-             alt="Helicopter"
-             class="thumb rounded-xl w-full h-[100px] object-cover cursor-pointer hover:opacity-80 transition">
-<img src="/img/plachoder.png" alt="" class="thumb rounded-xl w-full h-[100px] object-cover cursor-pointer hover:opacity-80 transition">
-<img src="/img/plachoder.png" alt="" class="thumb rounded-xl w-full h-[100px] object-cover cursor-pointer hover:opacity-80 transition">
-
-            </div>
-      
+      <!-- Tombol Hamburger -->
+      <button id="menu-button" class="md:hidden focus:outline-none z-50 relative">
+        <svg id="hamburger-icon" class="w-7 h-7 text-[#07203E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+        <svg id="close-icon" class="w-7 h-7 text-[#07203E] hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+      <!-- Navigasi -->
+      <nav id="menu" class="absolute top-20 left-0 w-full md:static md:w-auto md:bg-transparent bg-white md:flex hidden transition duration-300 py-2">
+        <ul class="flex flex-col md:flex-row md:space-x-6 text-center md:text-left">
+          <li><a href="#" class="block py-3 px-6 text-gray-600 hover:text-red-500">Home</a></li>
+          <li><a href="#" class="block py-3 px-6 text-gray-600 hover:text-red-500">About</a></li>
+          <li><a href="#service" class="block py-3 px-6 text-gray-600 hover:text-red-500">Services</a></li>
+          <li><a href="./assets/kontak.html" class="block py-3 px-6 bg-[#02a7c5] text-white rounded-xl hover:bg-red-500 transition duration-300 font-bold">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <!-- Judul -->
-    <div class="mt-6">
-      <h1 class="text-xl font-bold mb-2">Volcanoes and Temples</h1>
-      <div class="flex items-center text-gray-600 mb-4">
-        <svg class="w-5 h-5 mr-2 text-gray-500" fill="none" stroke="currentColor" stroke-width="2"
-          viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round"
-          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-        </svg>
-        <span class="mr-4">75 min</span>
-        <svg class="w-5 h-5 mr-2 text-gray-500" fill="none" stroke="currentColor" stroke-width="2"
-          viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <text x="3" y="17" font-size="13" fill="currentColor" font-family="Arial, sans-serif">Rp</text>
-        </svg>
-        <span>1.500.000</span>
+  </header>
+
+  <!-- Konten Utama -->
+  <div class="max-w-7xl mx-auto px-4 mt-32">
+    <div class="flex flex-col md:flex-row gap-6">
+      <!-- Gambar Utama -->
+      <div class="flex-1 rounded-xl overflow-hidden max-h-[700px] min-h-[400px]">
+        <img id="mainImage" src="https://cdn.prod.website-files.com/63854a5ff7ce0b78ba75a5e5/647f7a249bdfced2e4311f4d_exclusive-volcano-and-temples-tour-id-p-1600.jpeg" alt="Volcano" class="w-full h-full object-cover transition-all duration-300" />
       </div>
-      <h2 class="text-xl font-semibold text-2xl">Prambanan Temple</h2>
-      <p class="mt-2 text-gray-700 text-2xl">
-        Prambanan Temple is the largest Hindu temple complex in Indonesia and one of the most magnificent ancient monuments in Southeast Asia. Built in the 9th century, this UNESCO World Heritage Site is renowned for its towering spires and intricate stone carvings that depict stories from the Ramayana epic. Surrounded by lush gardens, Prambanan offers a breathtaking view, especially at sunrise and sunset. Visitors can explore the main temples dedicated to Shiva, Vishnu, and Brahma, as well as hundreds of smaller shrines scattered throughout the complex. Prambanan is not only a testament to Indonesia’s rich cultural heritage but also a symbol of religious harmony and architectural brilliance.
+
+      <!-- Thumbnail -->
+      <div class="grid grid-cols-4 md:grid-cols-1 gap-4 w-full md:w-[100px]">
+        <img src="https://cdn.prod.website-files.com/63854a5ff7ce0b78ba75a5e5/638985ce538b8f1bcbd13cb3_Rectangle%2016-2-min.jpg" class="thumb rounded-xl w-full h-[100px] object-cover cursor-pointer hover:opacity-80 transition" />
+        <img src="https://cdn.prod.website-files.com/63854a5ff7ce0b78ba75a5e5/647f7a249bdfced2e4311f4d_exclusive-volcano-and-temples-tour-id-p-1600.jpeg" class="thumb rounded-xl w-full h-[100px] object-cover cursor-pointer hover:opacity-80 transition" />
+        <img src="/img/plachoder.png" class="thumb rounded-xl w-full h-[100px] object-cover cursor-pointer hover:opacity-80 transition" />
+        <img src="/img/plachoder.png" class="thumb rounded-xl w-full h-[100px] object-cover cursor-pointer hover:opacity-80 transition" />
+      </div>
+    </div>
+
+    <!-- Detail -->
+    <div class="mt-6">
+      <h1 class="text-2xl md:text-3xl font-bold mb-2">Volcanoes and Temples</h1>
+      <div class="flex items-center text-gray-600 mb-4 space-x-4">
+        <span class="flex items-center"><svg class="w-5 h-5 mr-1 text-gray-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>75 min</span>
+        <span class="flex items-center"><svg class="w-5 h-5 mr-1 text-gray-500" fill="currentColor" viewBox="0 0 24 24"><text x="3" y="17" font-size="13" fill="currentColor">Rp</text></svg>1.500.000</span>
+      </div>
+      <h2 class="text-xl font-semibold mb-2">Prambanan Temple</h2>
+      <p class="text-gray-700 text-lg leading-relaxed">
+        Prambanan Temple adalah kompleks candi Hindu terbesar di Indonesia dan salah satu monumen kuno paling megah di Asia Tenggara. Dibangun pada abad ke-9, situs warisan dunia UNESCO ini terkenal dengan menara-menara menjulang tinggi dan relief batu yang menggambarkan kisah Ramayana. Dikelilingi taman hijau, Prambanan menawarkan pemandangan yang menakjubkan, terutama saat matahari terbit dan terbenam.
       </p>
     </div>
   </div>
-  </div>
-  </div>
-<!-- Section Destinasi Wisata -->
-<div class="max-w-7xl mx-auto mt-12 px-4">
-  <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Destinasi Wisata Lainnya</h2>
-  <div class="relative">
-    <!-- Tombol scroll kiri -->
-    <button id="scrollLeft" class="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white border border-gray-300 rounded-full shadow p-2 hover:bg-gray-100 transition">
-      <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
-      </svg>
-    </button>
-    <!-- Tombol scroll kanan -->
-    <button id="scrollRight" class="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white border border-gray-300 rounded-full shadow p-2 hover:bg-gray-100 transition">
-      <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
-      </svg>
-    </button>
-    <!-- Scrollable container -->
-    <div id="destinasiScroll" class="flex gap-8 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide" style="scrollbar-width: none;">
-      <!-- Card 1 -->
-      <div class="min-w-[380px] max-w-md bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col snap-center">
-      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Candi Borobudur" class="h-72 w-full object-cover">
-      <div class="p-8 flex-1 flex flex-col">
-        <h3 class="font-semibold text-2xl mb-2 text-gray-800">Candi Borobudur</h3>
-        <p class="text-gray-600 mb-6 flex-1">Candi Buddha terbesar di dunia yang terletak di Magelang, Jawa Tengah, terkenal dengan relief dan stupa-stupanya.</p>
-        <a href="#" class="inline-block text-white bg-[#2196f3] hover:bg-blue-700 font-semibold rounded-lg px-6 py-3 text-center transition-colors duration-200 shadow-md mt-auto">Lihat Detail</a>
+
+  <!-- Section Destinasi -->
+  <div class="max-w-7xl mx-auto mt-16 px-4">
+    <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Destinasi Wisata Lainnya</h2>
+    <div class="relative">
+      <button id="scrollLeft" class="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white border rounded-full shadow p-2 hover:bg-gray-100">
+        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <button id="scrollRight" class="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white border rounded-full shadow p-2 hover:bg-gray-100">
+        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+      <div id="destinasiScroll" class="flex gap-8 overflow-x-auto snap-x snap-mandatory scroll-smooth">
+        <!-- Card Template -->
+        <!-- Tambahkan kartu baru di sini -->
+        <!-- Copy paste card untuk menambah -->
+        <!-- Contoh: -->
+        <div class="min-w-[300px] max-w-md bg-white rounded-2xl shadow-md flex flex-col snap-center overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" class="h-64 w-full object-cover" alt="Candi Borobudur">
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="font-bold text-xl mb-2 text-gray-800">Candi Borobudur</h3>
+            <p class="text-gray-600 mb-4 flex-1">Candi Buddha terbesar di dunia yang terletak di Magelang, Jawa Tengah.</p>
+            <a href="#" class="bg-[#02a7c5] hover:bg-blue-700 text-white text-center py-2 rounded-lg font-semibold">Lihat Detail</a>
+          </div>
+        </div>
+                <div class="min-w-[300px] max-w-md bg-white rounded-2xl shadow-md flex flex-col snap-center overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" class="h-64 w-full object-cover" alt="Candi Borobudur">
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="font-bold text-xl mb-2 text-gray-800">Candi Borobudur</h3>
+            <p class="text-gray-600 mb-4 flex-1">Candi Buddha terbesar di dunia yang terletak di Magelang, Jawa Tengah.</p>
+            <a href="#" class="bg-[#02a7c5] hover:bg-blue-700 text-white text-center py-2 rounded-lg font-semibold">Lihat Detail</a>
+          </div>
+        </div>
+                <div class="min-w-[300px] max-w-md bg-white rounded-2xl shadow-md flex flex-col snap-center overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" class="h-64 w-full object-cover" alt="Candi Borobudur">
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="font-bold text-xl mb-2 text-gray-800">Candi Borobudur</h3>
+            <p class="text-gray-600 mb-4 flex-1">Candi Buddha terbesar di dunia yang terletak di Magelang, Jawa Tengah.</p>
+            <a href="#" class="bg-[#02a7c5] hover:bg-blue-700 text-white text-center py-2 rounded-lg font-semibold">Lihat Detail</a>
+          </div>
+        </div>
+                <div class="min-w-[300px] max-w-md bg-white rounded-2xl shadow-md flex flex-col snap-center overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" class="h-64 w-full object-cover" alt="Candi Borobudur">
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="font-bold text-xl mb-2 text-gray-800">Candi Borobudur</h3>
+            <p class="text-gray-600 mb-4 flex-1">Candi Buddha terbesar di dunia yang terletak di Magelang, Jawa Tengah.</p>
+            <a href="#" class="bg-[#02a7c5] hover:bg-blue-700 text-white text-center py-2 rounded-lg font-semibold">Lihat Detail</a>
+          </div>
+        </div>
+                <div class="min-w-[300px] max-w-md bg-white rounded-2xl shadow-md flex flex-col snap-center overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" class="h-64 w-full object-cover" alt="Candi Borobudur">
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="font-bold text-xl mb-2 text-gray-800">Candi Borobudur</h3>
+            <p class="text-gray-600 mb-4 flex-1">Candi Buddha terbesar di dunia yang terletak di Magelang, Jawa Tengah.</p>
+            <a href="#" class="bg-[#02a7c5] hover:bg-blue-700 text-white text-center py-2 rounded-lg font-semibold">Lihat Detail</a>
+          </div>
+        </div>
+                <div class="min-w-[300px] max-w-md bg-white rounded-2xl shadow-md flex flex-col snap-center overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" class="h-64 w-full object-cover" alt="Candi Borobudur">
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="font-bold text-xl mb-2 text-gray-800">Candi Borobudur</h3>
+            <p class="text-gray-600 mb-4 flex-1">Candi Buddha terbesar di dunia yang terletak di Magelang, Jawa Tengah.</p>
+            <a href="#" class="bg-[#02a7c5] hover:bg-blue-700 text-white text-center py-2 rounded-lg font-semibold">Lihat Detail</a>
+          </div>
+        </div>
+                <div class="min-w-[300px] max-w-md bg-white rounded-2xl shadow-md flex flex-col snap-center overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" class="h-64 w-full object-cover" alt="Candi Borobudur">
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="font-bold text-xl mb-2 text-gray-800">Candi Borobudur</h3>
+            <p class="text-gray-600 mb-4 flex-1">Candi Buddha terbesar di dunia yang terletak di Magelang, Jawa Tengah.</p>
+            <a href="#" class="bg-[#02a7c5] hover:bg-blue-700 text-white text-center py-2 rounded-lg font-semibold">Lihat Detail</a>
+          </div>
+        </div>
+        <!-- Tambahkan destinasi lainnya dengan pola serupa -->
       </div>
-      </div>
-      <!-- Card 2 -->
-      <div class="min-w-[380px] max-w-md bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col snap-center">
-      <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Gunung Bromo" class="h-72 w-full object-cover">
-      <div class="p-8 flex-1 flex flex-col">
-        <h3 class="font-semibold text-2xl mb-2 text-gray-800">Gunung Bromo</h3>
-        <p class="text-gray-600 mb-6 flex-1">Gunung berapi aktif di Jawa Timur yang menawarkan pemandangan matahari terbit yang menakjubkan.</p>
-        <a href="#" class="inline-block text-white bg-[#2196f3] hover:bg-blue-700 font-semibold rounded-lg px-6 py-3 text-center transition-colors duration-200 shadow-md mt-auto">Lihat Detail</a>
-      </div>
-      </div>
-      <!-- Card 3 -->
-      <div class="min-w-[380px] max-w-md bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col snap-center">
-      <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=600&q=80" alt="Pantai Kuta" class="h-72 w-full object-cover">
-      <div class="p-8 flex-1 flex flex-col">
-        <h3 class="font-semibold text-2xl mb-2 text-gray-800">Pantai Kuta</h3>
-        <p class="text-gray-600 mb-6 flex-1">Pantai populer di Bali yang terkenal dengan pasir putih dan ombaknya yang cocok untuk berselancar.</p>
-        <a href="#" class="inline-block text-white bg-[#2196f3] hover:bg-blue-700 font-semibold rounded-lg px-6 py-3 text-center transition-colors duration-200 shadow-md mt-auto">Lihat Detail</a>
-      </div>
-      </div>
-      <!-- Card 4 -->
-      <div class="min-w-[380px] max-w-md bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col snap-center">
-      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Tanah Lot" class="h-72 w-full object-cover">
-      <div class="p-8 flex-1 flex flex-col">
-        <h3 class="font-semibold text-2xl mb-2 text-gray-800">Tanah Lot</h3>
-        <p class="text-gray-600 mb-6 flex-1">Pura di atas batu karang di tepi laut Bali, terkenal dengan pemandangan matahari terbenamnya yang indah.</p>
-        <a href="#" class="inline-block text-white bg-[#2196f3] hover:bg-blue-700 font-semibold rounded-lg px-6 py-3 text-center transition-colors duration-200 shadow-md mt-auto">Lihat Detail</a>
-      </div>
-      </div>
-      <!-- Card 5 -->
-      <div class="min-w-[380px] max-w-md bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col snap-center">
-      <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Ubud" class="h-72 w-full object-cover">
-      <div class="p-8 flex-1 flex flex-col">
-        <h3 class="font-semibold text-2xl mb-2 text-gray-800">Ubud</h3>
-        <p class="text-gray-600 mb-6 flex-1">Kawasan seni dan budaya di Bali, dikelilingi sawah, hutan, dan sungai yang menawan.</p>
-        <a href="#" class="inline-block text-white bg-[#2196f3] hover:bg-blue-700 font-semibold rounded-lg px-6 py-3 text-center transition-colors duration-200 shadow-md mt-auto">Lihat Detail</a>
-      </div>
-      </div>
-      <!-- Card 6 -->
-      <div class="min-w-[380px] max-w-md bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col snap-center">
-      <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80" alt="Nusa Penida" class="h-72 w-full object-cover">
-      <div class="p-8 flex-1 flex flex-col">
-        <h3 class="font-semibold text-2xl mb-2 text-gray-800">Nusa Penida</h3>
-        <p class="text-gray-600 mb-6 flex-1">Pulau indah di tenggara Bali, terkenal dengan pantai dan tebing-tebing spektakuler.</p>
-        <a href="#" class="inline-block text-white bg-[#2196f3] hover:bg-blue-700 font-semibold rounded-lg px-6 py-3 text-center transition-colors duration-200 shadow-md mt-auto">Lihat Detail</a>
-      </div>
-      </div>
-    </div>
     </div>
   </div>
 
-  <style>
-    /* Hilangkan scrollbar pada destinasiScroll */
-    #destinasiScroll {
-    scrollbar-width: none;
-    }
-    #destinasiScroll::-webkit-scrollbar {
-    display: none;
-    }
-  </style>
+  
 
+  <!-- Script -->
   <script>
-    // Tombol scroll horizontal
-    const destinasiScroll = document.getElementById('destinasiScroll');
-    const scrollLeftBtn = document.getElementById('scrollLeft');
-    const scrollRightBtn = document.getElementById('scrollRight');
+    const menuButton = document.getElementById("menu-button");
+    const menu = document.getElementById("menu");
+    const hamburgerIcon = document.getElementById("hamburger-icon");
+    const closeIcon = document.getElementById("close-icon");
+
+    menuButton.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+      hamburgerIcon.classList.toggle("hidden");
+      closeIcon.classList.toggle("hidden");
+    });
+
+    const mainImage = document.getElementById("mainImage");
+    const thumbnails = document.querySelectorAll(".thumb");
+
+    thumbnails.forEach((thumb) => {
+      thumb.addEventListener("click", () => {
+        mainImage.src = thumb.src;
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+
+    const destinasiScroll = document.getElementById("destinasiScroll");
+    const scrollLeftBtn = document.getElementById("scrollLeft");
+    const scrollRightBtn = document.getElementById("scrollRight");
 
     function updateScrollButtons() {
-    if (!destinasiScroll) return;
-    // Tampilkan tombol hanya jika bisa di-scroll
-    if (destinasiScroll.scrollWidth > destinasiScroll.clientWidth) {
-      scrollLeftBtn.style.display = 'flex';
-      scrollRightBtn.style.display = 'flex';
-    } else {
-      scrollLeftBtn.style.display = 'none';
-      scrollRightBtn.style.display = 'none';
-    }
+      if (destinasiScroll.scrollWidth > destinasiScroll.clientWidth) {
+        scrollLeftBtn.style.display = 'flex';
+        scrollRightBtn.style.display = 'flex';
+      } else {
+        scrollLeftBtn.style.display = 'none';
+        scrollRightBtn.style.display = 'none';
+      }
     }
 
-    if (scrollLeftBtn && scrollRightBtn && destinasiScroll) {
-    scrollLeftBtn.addEventListener('click', () => {
-      destinasiScroll.scrollBy({ left: -400, behavior: 'smooth' });
-    });
-    scrollRightBtn.addEventListener('click', () => {
-      destinasiScroll.scrollBy({ left: 400, behavior: 'smooth' });
-    });
-    window.addEventListener('resize', updateScrollButtons);
-    window.addEventListener('DOMContentLoaded', updateScrollButtons);
+    if (scrollLeftBtn && scrollRightBtn) {
+      scrollLeftBtn.addEventListener('click', () => {
+        destinasiScroll.scrollBy({ left: -400, behavior: 'smooth' });
+      });
+      scrollRightBtn.addEventListener('click', () => {
+        destinasiScroll.scrollBy({ left: 400, behavior: 'smooth' });
+      });
     }
 
-    // Otomatis scroll ke kanan setiap 3 detik
     let autoScrollInterval;
     function startAutoScroll() {
-    autoScrollInterval = setInterval(() => {
-      if (!destinasiScroll) return;
-      // Jika sudah di ujung kanan, kembali ke awal
-      if (destinasiScroll.scrollLeft + destinasiScroll.clientWidth >= destinasiScroll.scrollWidth - 10) {
-      destinasiScroll.scrollTo({ left: 0, behavior: 'smooth' });
-      } else {
-      destinasiScroll.scrollBy({ left: 400, behavior: 'smooth' });
-      }
-    }, 3000);
+      autoScrollInterval = setInterval(() => {
+        if (destinasiScroll.scrollLeft + destinasiScroll.clientWidth >= destinasiScroll.scrollWidth - 10) {
+          destinasiScroll.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          destinasiScroll.scrollBy({ left: 400, behavior: 'smooth' });
+        }
+      }, 3000);
     }
+
     function stopAutoScroll() {
-    clearInterval(autoScrollInterval);
+      clearInterval(autoScrollInterval);
     }
-    // Mulai auto scroll saat halaman siap
-    window.addEventListener('DOMContentLoaded', startAutoScroll);
-    // Pause auto scroll saat mouse hover
+
+    window.addEventListener('DOMContentLoaded', () => {
+      updateScrollButtons();
+      startAutoScroll();
+    });
+
+    window.addEventListener('resize', updateScrollButtons);
     destinasiScroll.addEventListener('mouseenter', stopAutoScroll);
     destinasiScroll.addEventListener('mouseleave', startAutoScroll);
   </script>
-
-  <!-- Script Opsional -->
-  <script>
-    // Kamu bisa tambahkan fungsionalitas JavaScript di sini jika diperlukan
-    console.log("Halaman Volcano & Temples siap!");
-
-     // Ambil elemen gambar utama
-    const mainImage = document.getElementById("mainImage");
-    // Ambil semua gambar kecil
-    const thumbnails = document.querySelectorAll(".thumb");
-
-    thumbnails.forEach(img => {
-      img.addEventListener("click", () => {
-        mainImage.src = img.src; // Ganti src gambar utama
-        window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll ke atas
-      });
-    });
-  </script>
-
 </body>
 </html>
