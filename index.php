@@ -10,16 +10,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <!-- flowbite cdn -->
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Flowbite CSS (optional jika hanya pakai komponen JS) -->
-  <link rel="stylesheet" href="https://unpkg.com/flowbite@2.2.1/dist/flowbite.min.css" />
-
-  <!-- Flowbite JS (WAJIB) -->
-  <script src="https://unpkg.com/flowbite@2.2.1/dist/flowbite.min.js"></script>
-
   <meta name="description"
     content="Wonderful Bali - Explore the beauty of Bali with our travel agency. Discover attractions, culture, and unforgettable experiences in Bali.">
   <title>Wonderful Bali</title>
@@ -34,14 +25,13 @@
 <body class="font-poppins">
   <header
     class="navbar shadow-md fixed w-full top-0 left-0 z-50 bg-white/20 hover:bg-white/60 duration-500 shadow-xl">
-<div class="max-w-full mx-auto flex justify-between items-center px-6 py-3 md:py-4 w-full">
+    <div class="max-w-full mx-auto flex justify-between items-center px-6 py-3 md:py-4 w-full">
 
 
       <div class="flex items-center gap-x-3 group">
         <img class="w-24 transition-opacity group-hover:opacity-80" src="img/icon/icon_png_travelku.png" alt="Logo">
       </div>
 
-      <!-- Tombol Hamburger (Mobile) -->
       <button id="menu-button" class="md:hidden focus:outline-none z-50 relative">
         <svg id="hamburger-icon" class="w-7 h-7 text-[#07203E]" fill="none" stroke="currentColor" viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg">
@@ -57,8 +47,8 @@
       <nav id="menu"
         class="absolute top-20 left-0 w-full md:static md:w-auto md:bg-transparent bg-white md:flex hidden transition-transform duration-300 transform md:transform-none py-2">
         <ul class="flex flex-col md:flex-row md:space-x-6 text-center md:text-left">
-          <li><a href="#" class="block py-3 px-6 text-gray-600 hover:text-red-500">Home</a></li>
-          <li><a href="./assets//layout/about.php" class="block py-3 px-6 text-gray-600 hover:text-red-500">About</a></li>
+          <li><a href="#home" class="block py-3 px-6 text-gray-600 hover:text-red-500">Home</a></li>
+          <li><a href="#about" class="block py-3 px-6 text-gray-600 hover:text-red-500">About</a></li>
           <li><a href="#service" class="block py-3 px-6 text-gray-600 hover:text-red-500">Services</a></li>
           <li><a href="./assets/kontak.html"
               class="block py-3 px-6 bg-[#02a7c5] text-white rounded-xl hover:bg-red-500 transition duration-300 font-bold">
@@ -70,69 +60,69 @@
   <div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 md:hidden"></div>
 
   <div class="hero">
-        <div class="slide active">
-            <img src="./assets/./img/./img_gwk.webp" alt="Mountain view" class="slide-image">
-            <div class="overlay"></div>
-            <div class="content">
-                <div class="location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Garuda Wisnu Kencana</span>
-                </div>
-                <h1 class="title">Cultural.</h1>
-                <p class="subtitle">Gwk
-                    Cultural Park Explore the majestic statue of Vishnu</p>
-                </p>
-                <a href="#" class="cta-button">
-                    Start Your Journey
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
+    <div class="slide active">
+      <img src="./assets/./img/./img_gwk.webp" alt="Mountain view" class="slide-image">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="location">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Garuda Wisnu Kencana</span>
         </div>
-        
-        <div class="slide">
-            <img src="./assets//img/labuann_bajooo.jpg" alt="Beach view" class="slide-image">
-            <div class="overlay"></div>
-            <div class="content">
-                <div class="location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Labuan Bajo</span>
-                </div>
-                <h1 class="title">Paradise.</h1>
-                <p class="subtitle">Experinece
-                    the breathtaking beauty of Labuan Bajo</p>
-                </p>
-                <a href="#" class="cta-button">
-                    Start Your Journey
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-        
-        <div class="slide">
-            <img src="./assets/./img//gilitrawangan-1.jpg" alt="City view" class="slide-image">
-            <div class="overlay"></div>
-            <div class="content">
-                <div class="location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Gili Trawangan</span>
-                </div>
-                <h1 class="title">Experince.</h1>
-                <p class="subtitle">Gili
-                    Trawangan Discover the vibrant culture and nightlife</p>
-                </p>
-                <a href="#" class="cta-button">
-                    Start Your Journey
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="navigation">
-            <div class="nav-dot active"></div>
-            <div class="nav-dot"></div>
-            <div class="nav-dot"></div>
-        </div>
+        <h1 class="title">Cultural.</h1>
+        <p class="subtitle">Gwk
+          Cultural Park Explore the majestic statue of Vishnu</p>
+        </p>
+        <a href="#service" class="cta-button">
+          Start Your Journey
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
     </div>
+
+    <div class="slide">
+      <img src="./assets//img/labuann_bajooo.jpg" alt="Beach view" class="slide-image">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="location">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Labuan Bajo</span>
+        </div>
+        <h1 class="title">Paradise.</h1>
+        <p class="subtitle">Experinece
+          the breathtaking beauty of Labuan Bajo</p>
+        </p>
+        <a href="#service" class="cta-button">
+          Start Your Journey
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="./assets/./img/gili-trawagan-1.webp" alt="City view" class="slide-image">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="location">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Gili Trawangan</span>
+        </div>
+        <h1 class="title">Experince.</h1>
+        <p class="subtitle">Gili
+          Trawangan Discover the vibrant culture and nightlife</p>
+        </p>
+        <a href="#service" class="cta-button">
+          Start Your Journey
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="navigation">
+      <div class="nav-dot active"></div>
+      <div class="nav-dot"></div>
+      <div class="nav-dot"></div>
+    </div>
+  </div>
 
   <section id="service" class="max-w-full mx-auto px-4 py-10" data-aos="fade-up">
     <div class="bg-slate-100 rounded-lg p-6" data-aos="fade-up" data-aos-delay="100">
@@ -302,6 +292,18 @@
       </div>
   </section>
 
+  <div id="about">
+    <?php
+    require "./assets/layout/about.php";
+    ?>
+  </div>
+
+  <div class="maps">
+    <?php 
+    require "./assets/layout/maps.php";
+    ?>
+  </div>
+
   <footer class="bg-gradient-to-tr from-[#02a7c5] to-[#07203E] text-white py-10 px-6 mt-10">
     <div class="max-w-full mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
       <div class="flex flex-col items-start">
@@ -339,34 +341,34 @@
   </footer>
 
 
-   <script>
-      // Slideshow functionality
-        const slides = document.querySelectorAll('.slide');
-        const dots = document.querySelectorAll('.nav-dot');
-        let currentSlide = 0;
+  <script>
+    // Slideshow functionality
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.nav-dot');
+    let currentSlide = 0;
 
-        function showSlide(index) {
-            slides.forEach(slide => slide.classList.remove('active'));
-            dots.forEach(dot => dot.classList.remove('active'));
-            
-            slides[index].classList.add('active');
-            dots[index].classList.add('active');
-            
-            currentSlide = index;
-        }
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      dots.forEach(dot => dot.classList.remove('active'));
 
-        // Add click events to navigation dots
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => showSlide(index));
-        });
+      slides[index].classList.add('active');
+      dots[index].classList.add('active');
 
-        // Auto-advance slides
-        setInterval(() => {
-            let next = currentSlide + 1;
-            if (next >= slides.length) next = 0;
-            showSlide(next);
-        }, 5000);
-    </script>
+      currentSlide = index;
+    }
+
+    // Add click events to navigation dots
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => showSlide(index));
+    });
+
+    // Auto-advance slides
+    setInterval(() => {
+      let next = currentSlide + 1;
+      if (next >= slides.length) next = 0;
+      showSlide(next);
+    }, 5000);
+  </script>
 
   <script>
     tailwind.config = {
@@ -380,13 +382,41 @@
     };
   </script>
   <script>
-    (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "eCrjiHM3xVYA5O3lMeJdt"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    (function() {
+      if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+        window.chatbase = (...arguments) => {
+          if (!window.chatbase.q) {
+            window.chatbase.q = []
+          }
+          window.chatbase.q.push(arguments)
+        };
+        window.chatbase = new Proxy(window.chatbase, {
+          get(target, prop) {
+            if (prop === "q") {
+              return target.q
+            }
+            return (...args) => target(prop, ...args)
+          }
+        })
+      }
+      const onLoad = function() {
+        const script = document.createElement("script");
+        script.src = "https://www.chatbase.co/embed.min.js";
+        script.id = "eCrjiHM3xVYA5O3lMeJdt";
+        script.domain = "www.chatbase.co";
+        document.body.appendChild(script)
+      };
+      if (document.readyState === "complete") {
+        onLoad()
+      } else {
+        window.addEventListener("load", onLoad)
+      }
+    })();
   </script>
   <script>
-    document.addEventListener("contextmenu", function (event) {
+    document.addEventListener("contextmenu", function(event) {
       event.preventDefault();
     });
-
   </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>

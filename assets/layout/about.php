@@ -9,16 +9,7 @@
 <body class="bg-white text-gray-800">
 
   <!-- ABOUT SECTION -->
-  <section class="max-w-6xl mx-auto px-4 py-12">
-
-    <!-- Gambar di atas judul -->
-    <div class="overflow-hidden rounded-2xl shadow-xl mb-10">
-      <img 
-        src="https://i2.wp.com/blog.tripcetera.com/id/wp-content/uploads/2019/04/111677518_ML.jpg" 
-        alt="Travel Image" 
-        class="w-full h-[500px] object-cover"
-      />
-    </div>
+  <section class="max-w-[1600px] mx-auto px-4 py-12">
 
     <!-- Konten -->
     <div class="bg-gradient-to-r from-blue-100 via-white to-gray-100 rounded-2xl shadow-lg p-10 md:p-14 flex flex-col md:flex-row gap-10">
