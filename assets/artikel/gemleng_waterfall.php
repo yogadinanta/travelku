@@ -16,22 +16,22 @@
     <div class="flex-1 rounded-xl overflow-hidden h-[500px] flex items-center justify-center bg-gray-100">
       <img
         id="mainImage"
-        src="../img/gilitrawangan-3.jpg"
+        src="../img/gembleng_waterfall-1-3.jpg"
         alt="Volcano"
         class="w-full h-full object-cover transition-all duration-300"
       />
     </div>
     <div class="grid grid-cols-4 md:grid-cols-1 gap-4 w-full md:w-[220px] md:h-[500px]">
-      <img src="../img/gilitrawangan-3.jpg" class="thumb rounded-xl w-full h-[110px] md:h-[115px] object-cover cursor-pointer hover:opacity-80 transition" />
-      <img src="../img/gilitrawangan-1.jpg" class="thumb rounded-xl w-full h-[110px] md:h-[115px] object-cover cursor-pointer hover:opacity-80 transition" />
-      <img src="../img/gilitrawangan-2.jpg" class="thumb rounded-xl w-full h-[110px] md:h-[115px] object-cover cursor-pointer hover:opacity-80 transition" />
-      <img src="../img/gilitrawangan.jpg" class="thumb rounded-xl w-full h-[110px] md:h-[115px] object-cover cursor-pointer hover:opacity-80 transition" />
+      <img src="../img/gembleng_waterfall-1.jpg" class="thumb rounded-xl w-full h-[110px] md:h-[115px] object-cover cursor-pointer hover:opacity-80 transition" />
+      <img src="../img/gembleng_waterfall-1-3.jpg" class="thumb rounded-xl w-full h-[110px] md:h-[115px] object-cover cursor-pointer hover:opacity-80 transition" />
+      <img src="../img/gembleng_waterfall-2.jpg" class="thumb rounded-xl w-full h-[110px] md:h-[115px] object-cover cursor-pointer hover:opacity-80 transition" />
+      <img src="../img/gembleng_waterfall.jpg" class="thumb rounded-xl w-full h-[110px] md:h-[115px] object-cover cursor-pointer hover:opacity-80 transition" />
     </div>
   </div>
     <div class="mt-6">
-      <h1 class="text-2xl md:text-3xl font-bold mb-2">Gili Trawangan</h1>
+      <h1 class="text-2xl md:text-3xl font-bold mb-2">Gembleng Waterfall</h1>
       <p class="text-gray-700 text-lg leading-relaxed">
-Gili Trawangan is the largest of the three Gili Islands located off the northwest coast of Lombok, Indonesia. Known for its stunning beaches, crystal-clear waters, and vibrant nightlife, Gili Trawangan is a popular destination for tourists seeking both relaxation and adventure. The island offers a range of activities including snorkeling, diving, and cycling around the island. With no motorized vehicles allowed, the atmosphere is peaceful and laid-back, making it an ideal spot for a tropical getaway.
+Gembleng Waterfall, also known as Air Terjun Gembleng, is a stunning natural attraction located in the Buleleng Regency of Bali, Indonesia. This waterfall is renowned for its picturesque setting, surrounded by lush greenery and rocky cliffs. The waterfall cascades down from a height of approximately 50 meters, creating a mesmerizing sight and a refreshing pool at its base. Visitors can enjoy the serene atmosphere, take a dip in the cool waters, and capture beautiful photographs of this hidden gem in Bali's natural landscape.
       </p>
     </div>
   </div>
@@ -43,20 +43,15 @@ Gili Trawangan is the largest of the three Gili Islands located off the northwes
         <div class="flex flex-col md:flex-row items-center gap-6 min-w-full">
           <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-40 h-40 rounded-2xl object-cover" alt="Alexander Han">
           <div>
-         <p class="text-gray-800 text-lg">Gili Trawangan is an incredible site filled with ancient charm and spiritual energy. The intricate stone carvings and towering structures left me in awe. A must-visit destination for anyone exploring Indonesia’s rich cultural and historical heritage.
-          
-        </p>
-         </p>
-            
-         </p>
+         <p class="text-gray-800 text-lg">Best view of Gembleng Waterfall! The lush surroundings and the sound of cascading water create a peaceful atmosphere. I loved taking a dip in the cool waters and enjoying the natural beauty. A perfect spot for nature lovers and photographers alike.</p>
             <p class="font-bold text-blue-900 mt-3">Alexander Han</p>
           </div>
         </div>
         <div class="flex flex-col md:flex-row items-center gap-6 min-w-full">
           <img src="https://randomuser.me/api/portraits/men/65.jpg" class="w-40 h-40 rounded-2xl object-cover" alt="Michael Lee">
           <div>
-          <p class="text-gray-800 text-lg">Gili 
-Trawangan is a great place to unwind and enjoy the beauty of Indonesia. The beaches are pristine, and the atmosphere is relaxed. I loved snorkeling in the clear waters and exploring the vibrant coral reefs. The local food was delicious, and the sunsets were breathtaking.</p>
+          <p class="text-gray-800 text-lg">Best 
+place to explore the beauty of Indonesia. The Gembleng Waterfall is a sight to behold, and the surrounding area is beautifully maintained. The natural beauty and tranquility of the place made my visit unforgettable. A truly refreshing experience!</p>
           </p>
          </p>
           
@@ -68,8 +63,9 @@ Trawangan is a great place to unwind and enjoy the beauty of Indonesia. The beac
         <div class="flex flex-col md:flex-row items-center gap-6 min-w-full">
           <img src="https://randomuser.me/api/portraits/women/68.jpg" class="w-40 h-40 rounded-2xl object-cover" alt="Sophia Brown">
           <div>
-           <p class="text-gray-800 text-lg">Beautful 
-Gili Trawangan! The island offers a perfect blend of relaxation and adventure. The beaches are stunning, and the local culture is vibrant. I enjoyed cycling around the island and discovering hidden gems. The nightlife was lively, with plenty of bars and restaurants to choose from.</p>
+           <p class="text-gray-800 text-lg">Beautiful view
+            at Gembleng Waterfall! The waterfall is stunning, and the surrounding nature is breathtaking. I enjoyed hiking to the waterfall and taking in the fresh air. The sound of the water and the lush greenery made it a perfect escape from the city.</p>
+           </p>
            </p>
            </p>
             <p classs="font-bold text-blue-900 mt-3">Sophia Brown</p>

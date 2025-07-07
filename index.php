@@ -76,10 +76,12 @@
             <div class="content">
                 <div class="location">
                     <i class="fas fa-map-marker-alt"></i>
-                    <span>Mountain Wilderness</span>
+                    <span>Garuda Wisnu Kencana</span>
                 </div>
-                <h1 class="title">Adventure.</h1>
-                <p class="subtitle">Discover untamed landscapes and witness nature's grandeur</p>
+                <h1 class="title">Cultural.</h1>
+                <p class="subtitle">Gwk
+                    Cultural Park Explore the majestic statue of Vishnu</p>
+                </p>
                 <a href="#" class="cta-button">
                     Start Your Journey
                     <i class="fas fa-arrow-right"></i>
@@ -88,15 +90,17 @@
         </div>
         
         <div class="slide">
-            <img src="img/bromo.webp" alt="Beach view" class="slide-image">
+            <img src="./assets//img//labuan-bajo1.jpg" alt="Beach view" class="slide-image">
             <div class="overlay"></div>
             <div class="content">
                 <div class="location">
                     <i class="fas fa-map-marker-alt"></i>
-                    <span>Maldives Islands</span>
+                    <span>Labuan Bajo</span>
                 </div>
                 <h1 class="title">Paradise.</h1>
-                <p class="subtitle">Experience tropical bliss and golden sunsets</p>
+                <p class="subtitle">Experinece
+                    the breathtaking beauty of Labuan Bajo</p>
+                </p>
                 <a href="#" class="cta-button">
                     Start Your Journey
                     <i class="fas fa-arrow-right"></i>
@@ -105,15 +109,17 @@
         </div>
         
         <div class="slide">
-            <img src="img/candi_prambanan.jpg" alt="City view" class="slide-image">
+            <img src="./assets/./img//gilitrawangan-1.jpg" alt="City view" class="slide-image">
             <div class="overlay"></div>
             <div class="content">
                 <div class="location">
                     <i class="fas fa-map-marker-alt"></i>
-                    <span>Urban Asia</span>
+                    <span>Gili Trawangan</span>
                 </div>
-                <h1 class="title">Culture.</h1>
-                <p class="subtitle">Immerse yourself in the pulse of neon-lit streets</p>
+                <h1 class="title">Experince.</h1>
+                <p class="subtitle">Gili
+                    Trawangan Discover the vibrant culture and nightlife</p>
+                </p>
                 <a href="#" class="cta-button">
                     Start Your Journey
                     <i class="fas fa-arrow-right"></i>
@@ -127,260 +133,6 @@
             <div class="nav-dot"></div>
         </div>
     </div>
-
-<!--     <button class="theme-toggle">
-        <i class="fas fa-gear"></i>
-    </button> -->
-    <style>
-      .hero{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        /* Navigation Styles */
-        .nav-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-            padding: 1.5rem 2rem;
-            background: transparent;
-        }
-
-        .nav-content {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: white;
-            gap: 0.5rem;
-        }
-
-        .logo-img {
-            width: 32px;
-            height: 32px;
-            background: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .logo-text {
-            font-size: 1.25rem;
-            font-weight: 500;
-        }
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 2.5rem;
-        }
-
-        .nav-link {
-            color: white;
-            text-decoration: none;
-            font-size: 1rem;
-            font-weight: 500;
-            transition: opacity 0.3s ease;
-        }
-
-        .nav-link:hover {
-            opacity: 0.8;
-        }
-
-        .cta-button {
-            background-color: #FF6B6B;
-            color: white;
-            padding: 0.8rem 1.5rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: transform 0.3s ease, background-color 0.3s ease;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-2px);
-            background-color: #FF5252;
-        }
-
-        /* Hero Section */
-        .hero {
-            position: relative;
-            height: 100vh;
-            width: 100%;
-            overflow: hidden;
-        }
-
-        .slide {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
-
-        .slide.active {
-            opacity: 1;
-        }
-
-        .slide-image {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(
-                to bottom,
-                rgba(0,0,0,0.2),
-                rgba(0,0,0,0.6)
-            );
-        }
-
-        .content {
-            position: absolute;
-            bottom: 15%;
-            left: 8%;
-            color: white;
-            z-index: 10;
-        }
-
-        .location {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin-bottom: 1rem;
-            color: rgba(255,255,255,0.9);
-        }
-
-        .location i {
-            color: #FF6B6B;
-        }
-
-        .title {
-            font-size: 3.5rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-        }
-
-        .subtitle {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            max-width: 500px;
-            color: rgba(255,255,255,0.9);
-        }
-
-        .content .cta-button {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 1rem;
-        }
-
-        .navigation {
-            position: absolute;
-            bottom: 2rem;
-            right: 2rem;
-            display: flex;
-            gap: 0.5rem;
-            z-index: 10;
-        }
-
-        .nav-dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background-color: rgba(255,255,255,0.5);
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .nav-dot.active {
-            width: 24px;
-            border-radius: 4px;
-            background-color: white;
-        }
-
-        .theme-toggle {
-            position: fixed;
-            right: 2rem;
-            bottom: 2rem;
-            z-index: 1000;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: white;
-            border: none;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .content {
-                left: 5%;
-                right: 5%;
-            }
-
-            .title {
-                font-size: 2.5rem;
-            }
-        }
-    </style>
-    <script>
-      // Slideshow functionality
-        const slides = document.querySelectorAll('.slide');
-        const dots = document.querySelectorAll('.nav-dot');
-        let currentSlide = 0;
-
-        function showSlide(index) {
-            slides.forEach(slide => slide.classList.remove('active'));
-            dots.forEach(dot => dot.classList.remove('active'));
-            
-            slides[index].classList.add('active');
-            dots[index].classList.add('active');
-            
-            currentSlide = index;
-        }
-
-        // Add click events to navigation dots
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => showSlide(index));
-        });
-
-        // Auto-advance slides
-        setInterval(() => {
-            let next = currentSlide + 1;
-            if (next >= slides.length) next = 0;
-            showSlide(next);
-        }, 5000);
-    </script>
-
 
   <section id="service" class="max-w-full mx-auto px-4 py-10" data-aos="fade-up">
     <div class="bg-slate-100 rounded-lg p-6" data-aos="fade-up" data-aos-delay="100">
@@ -405,7 +157,7 @@
           </div>
           <button
             class="font-poppins bg-transparent border border-[#02a7c5] text-[#02a7c5] hover:bg-[#02a7c5] hover:text-white py-2 px-3 float-end mx-3 my-2 rounded-lg transition duration-500">
-            <a href="assets/artikel/gwk.html">Read More</a>
+            <a href="./assets/artikel/gwk.php">Read More</a>
           </button>
         </div>
 
@@ -427,7 +179,7 @@
           </div>
           <button
             class="font-poppins bg-transparent border border-[#02a7c5] text-[#02a7c5] hover:bg-[#02a7c5] hover:text-white py-2 px-3 float-end mx-3 my-2 rounded-lg transition duration-500">
-            <a href="assets/artikel/jimbaran_beach.html">Read More</a>
+            <a href="./assets/artikel/jimbaran_beach.php">Read More</a>
           </button>
         </div>
 
@@ -449,7 +201,7 @@
           </div>
           <button
             class="font-poppins bg-transparent border border-[#02a7c5] text-[#02a7c5] hover:bg-[#02a7c5] hover:text-white py-2 px-3 float-end mx-3 my-2 rounded-lg transition duration-500">
-            <a href="assets/artikel/gemleng_waterfall.html">Read More</a>
+            <a href="./assets/artikel/gemleng_waterfall">Read More</a>
           </button>
         </div>
 
@@ -471,7 +223,7 @@
 
           <button
             class="font-poppins bg-transparent border border-[#02a7c5] text-[#02a7c5] hover:bg-[#02a7c5] hover:text-white py-2 px-3 float-end mx-3 my-2 rounded-lg transition duration-500">
-            <a href="assets/artikel/candi_prambanan.html">Read More</a>
+            <a href="./assets/artikel/candi_prambanan.php">Read More</a>
           </button>
         </div>
 
@@ -493,7 +245,7 @@
 
           <button
             class="font-poppins bg-transparent border border-[#02a7c5] text-[#02a7c5] hover:bg-[#02a7c5] hover:text-white py-2 px-3 float-end mx-3 my-2 rounded-lg transition duration-500">
-            <a href="assets/artikel/gili_trawangan.html">Read More</a>
+            <a href="./assets/artikel/gili_trawangan.php">Read More</a>
           </button>
         </div>
 
@@ -516,7 +268,7 @@
           </div>
           <button
             class="font-poppins bg-transparent border border-[#02a7c5] text-[#02a7c5] hover:bg-[#02a7c5] hover:text-white py-2 px-3 float-end mx-3 my-2 rounded-lg transition duration-500">
-            <a href="assets/artikel/labuan_bajo.html">Read More</a>
+            <a href="./assets/artikel/labuan_bajo.php">Read More</a>
           </button>
         </div>
 
@@ -552,7 +304,6 @@
 
   <footer class="bg-gradient-to-tr from-[#02a7c5] to-[#07203E] text-white py-10 px-6 mt-10">
     <div class="max-w-9xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
-      <!-- Logo & Description -->
       <div class="flex flex-col items-start">
         <img class="w-32 mb-3 drop-shadow-lg" src="img/icon/icon_png_travelku.png" alt="Travelku Logo">
         <p class="text-slate-100 text-sm max-w-xs">The best travel agency for your Bali adventure. Explore, discover, and enjoy unforgettable moments with us!</p>
@@ -563,7 +314,6 @@
           <a href="#" class="hover:text-[#02a7c5] transition"><i class="fab fa-twitter"></i></a>
         </div>
       </div>
-      <!-- Navigation Links -->
       <div class="flex flex-col md:flex-row gap-8">
         <div>
           <h4 class="font-semibold mb-2 text-lg">Quick Links</h4>
@@ -587,6 +337,36 @@
       &copy; 2025 Travelku. All rights reserved.
     </div>
   </footer>
+
+
+   <script>
+      // Slideshow functionality
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.nav-dot');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+            
+            currentSlide = index;
+        }
+
+        // Add click events to navigation dots
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => showSlide(index));
+        });
+
+        // Auto-advance slides
+        setInterval(() => {
+            let next = currentSlide + 1;
+            if (next >= slides.length) next = 0;
+            showSlide(next);
+        }, 5000);
+    </script>
 
   <script>
     tailwind.config = {

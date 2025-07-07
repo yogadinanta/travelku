@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Footer Section</title>
 </head>
 <body>
   <footer class="bg-gradient-to-tr from-[#02a7c5] to-[#02a7d1] text-white py-10 px-6 mt-10">
     <div class="max-w-[1500px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
-      <!-- Logo & Description -->
       <div class="flex flex-col items-start">
         <img class="w-32 mb-3 drop-shadow-lg bg-white p-4 rounded-xl" src="../img/./icon/./icon_png_travelku.png" alt="Travelku Logo">
         <p class="text-slate-100 text-sm max-w-xs">The best travel agency for your Bali adventure. Explore, discover, and enjoy unforgettable moments with us!</p>
@@ -19,7 +18,6 @@
           <a href="#" class="hover:text-[#02a7c5] transition"><i class="fab fa-twitter"></i></a>
         </div>
       </div>
-      <!-- Navigation Links -->
       <div class="flex flex-col md:flex-row gap-8">
         <div>
           <h4 class="font-semibold mb-2 text-lg">Quick Links</h4>
