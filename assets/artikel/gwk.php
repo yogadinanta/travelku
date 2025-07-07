@@ -16,22 +16,22 @@
     <div class="flex-1 rounded-xl overflow-hidden h-[500px] flex items-center justify-center bg-gray-100">
       <img
         id="mainImage"
-        src="../img/prambanan-1.jpg"
+        src="../img/gwk-1.jpg"
         alt="Volcano"
         class="w-full h-full object-cover transition-all duration-300"
       />
     </div>
     <div class="grid grid-cols-4 md:grid-cols-1 gap-4 w-full md:w-[220px] md:h-[500px]">
-      <img src="../img/prambanan-1.jpg" class="thumb rounded-xl w-full h-[110px] md:h-[115px] object-cover cursor-pointer hover:opacity-80 transition" />
-      <img src="../img/prambanan-2.jpg" class="thumb rounded-xl w-full h-[110px] md:h-[115px] object-cover cursor-pointer hover:opacity-80 transition" />
-      <img src="../img/prambanan-3.jpg" class="thumb rounded-xl w-full h-[110px] md:h-[115px] object-cover cursor-pointer hover:opacity-80 transition" />
-      <img src="../img/prambanan-4.jpg" class="thumb rounded-xl w-full h-[110px] md:h-[115px] object-cover cursor-pointer hover:opacity-80 transition" />
+      <img src="../img/gwk-1.jpg" class="thumb rounded-xl w-full h-[110px] md:h-[115px] object-cover cursor-pointer hover:opacity-80 transition" />
+      <img src="../img/gwk-2.jpg" class="thumb rounded-xl w-full h-[110px] md:h-[115px] object-cover cursor-pointer hover:opacity-80 transition" />
+      <img src="../img/gwk-3.jpg" class="thumb rounded-xl w-full h-[110px] md:h-[115px] object-cover cursor-pointer hover:opacity-80 transition" />
+      <img src="../img/gwk.jpg" class="thumb rounded-xl w-full h-[110px] md:h-[115px] object-cover cursor-pointer hover:opacity-80 transition" />
     </div>
   </div>
     <div class="mt-6">
-      <h1 class="text-2xl md:text-3xl font-bold mb-2">Prambanan Temple</h1>
+      <h1 class="text-2xl md:text-3xl font-bold mb-2">Garuda Wisnu Kencana</h1>
       <p class="text-gray-700 text-lg leading-relaxed">
-        Prambanan Temple is the largest Hindu temple complex in Indonesia and one of the most magnificent ancient monuments in Southeast Asia. Built in the 9th century, this UNESCO World Heritage site is renowned for its towering spires and stone reliefs depicting the Ramayana epic. Surrounded by green gardens, Prambanan offers breathtaking views, especially at sunrise and sunset.
+GWK Cultural Park is a cultural park located in Ungasan, South Kuta, Badung Regency, Bali, Indonesia. The park is dedicated to the Hindu god Vishnu and his mount Garuda, and it features a 120-meter tall statue of Vishnu riding Garuda, which is one of the tallest statues in the world. The park also includes various cultural performances, exhibitions, and traditional Balinese art and architecture. It serves as a major tourist attraction in Bali, offering visitors a glimpse into Balinese culture and spirituality.
       </p>
     </div>
   </div>
@@ -43,22 +43,35 @@
         <div class="flex flex-col md:flex-row items-center gap-6 min-w-full">
           <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-40 h-40 rounded-2xl object-cover" alt="Alexander Han">
           <div>
-         <p class="text-gray-800 text-lg">Prambanan Temple is an incredible site filled with ancient charm and spiritual energy. The intricate stone carvings and towering structures left me in awe. A must-visit destination for anyone exploring Indonesia’s rich cultural and historical heritage.</p>
+         <p class="text-gray-800 text-lg">Gwk 
+Cultural Park is an incredible site filled with ancient charm and spiritual energy. The intricate stone carvings and towering structures left me in awe. A must-visit destination for anyone exploring Indonesia’s rich cultural and historical heritage.
+          
+        </p>
+         </p>
+            
+         </p>
             <p class="font-bold text-blue-900 mt-3">Alexander Han</p>
           </div>
         </div>
         <div class="flex flex-col md:flex-row items-center gap-6 min-w-full">
           <img src="https://randomuser.me/api/portraits/men/65.jpg" class="w-40 h-40 rounded-2xl object-cover" alt="Michael Lee">
           <div>
-          <p class="text-gray-800 text-lg">I was amazed by the beauty of Prambanan. The temple complex is well preserved, and the surrounding scenery is peaceful. Watching the sunset behind the temple made the entire experience even more magical and unforgettable.</p>
+          <p class="text-gray-800 text-lg">Best place to explore the beauty of Indonesia. The Garuda Wisnu Kencana statue is a sight to behold, and the surrounding park is beautifully maintained. The cultural performances were captivating, showcasing the rich traditions of Bali. A truly unforgettable experience!</p>
+         </p>
+          
+          </p>
+          </p>
             <p class="font-bold text-blue-900 mt-3">Michael Lee</p>
           </div>
         </div>
         <div class="flex flex-col md:flex-row items-center gap-6 min-w-full">
           <img src="https://randomuser.me/api/portraits/women/68.jpg" class="w-40 h-40 rounded-2xl object-cover" alt="Sophia Brown">
           <div>
-           <p class="text-gray-800 text-lg">Walking through Prambanan Temple felt like stepping into history. The grandeur of its architecture and the stories carved into the stones were breathtaking. It’s one of the most impressive cultural landmarks I’ve seen in Southeast Asia.</p>
-            <p class="font-bold text-blue-900 mt-3">Sophia Brown</p>
+           <p class="text-gray-800 text-lg">Beautiful view 
+at Garuda Wisnu Kencana! The statue is magnificent, and the park offers a peaceful escape from the hustle and bustle of Bali. I enjoyed learning about the local culture and history through the exhibits and performances. A perfect place for photography and relaxation.</p>
+           </p>
+           </p>
+            <p classs="font-bold text-blue-900 mt-3">Sophia Brown</p>
           </div>
         </div>
       </div>

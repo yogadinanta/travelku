@@ -1,0 +1,9 @@
+    html {
+      scroll-behavior: smooth;
+    }
+    #destinasiScroll {
+      scrollbar-width: none;
+    }
+    #destinasiScroll::-webkit-scrollbar {
+      display: none;
+    }

@@ -16,22 +16,22 @@
     <div class="flex-1 rounded-xl overflow-hidden h-[500px] flex items-center justify-center bg-gray-100">
       <img
         id="mainImage"
-        src="../img/prambanan-1.jpg"
+        src="../img/jimbaran-beach1.webp"
         alt="Volcano"
         class="w-full h-full object-cover transition-all duration-300"
       />
     </div>
     <div class="grid grid-cols-4 md:grid-cols-1 gap-4 w-full md:w-[220px] md:h-[500px]">
-      <img src="../img/prambanan-1.jpg" class="thumb rounded-xl w-full h-[110px] md:h-[115px] object-cover cursor-pointer hover:opacity-80 transition" />
-      <img src="../img/prambanan-2.jpg" class="thumb rounded-xl w-full h-[110px] md:h-[115px] object-cover cursor-pointer hover:opacity-80 transition" />
-      <img src="../img/prambanan-3.jpg" class="thumb rounded-xl w-full h-[110px] md:h-[115px] object-cover cursor-pointer hover:opacity-80 transition" />
-      <img src="../img/prambanan-4.jpg" class="thumb rounded-xl w-full h-[110px] md:h-[115px] object-cover cursor-pointer hover:opacity-80 transition" />
+      <img src="../img/jimbaran-beach1.webp" class="thumb rounded-xl w-full h-[110px] md:h-[115px] object-cover cursor-pointer hover:opacity-80 transition" />
+      <img src="../img/jimbaran-beach2.webp" class="thumb rounded-xl w-full h-[110px] md:h-[115px] object-cover cursor-pointer hover:opacity-80 transition" />
+      <img src="../img/jimbaran-beach3.jpg" class="thumb rounded-xl w-full h-[110px] md:h-[115px] object-cover cursor-pointer hover:opacity-80 transition" />
+      <img src="../img/jimbaran-bech.jpg" class="thumb rounded-xl w-full h-[110px] md:h-[115px] object-cover cursor-pointer hover:opacity-80 transition" />
     </div>
   </div>
     <div class="mt-6">
-      <h1 class="text-2xl md:text-3xl font-bold mb-2">Prambanan Temple</h1>
+      <h1 class="text-2xl md:text-3xl font-bold mb-2">Jimbaran Beach</h1>
       <p class="text-gray-700 text-lg leading-relaxed">
-        Prambanan Temple is the largest Hindu temple complex in Indonesia and one of the most magnificent ancient monuments in Southeast Asia. Built in the 9th century, this UNESCO World Heritage site is renowned for its towering spires and stone reliefs depicting the Ramayana epic. Surrounded by green gardens, Prambanan offers breathtaking views, especially at sunrise and sunset.
+Jimbaran Beach is a stunning coastal destination located on the southwestern coast of Bali, Indonesia. Known for its golden sands and crystal-clear waters, Jimbaran Beach is famous for its seafood restaurants that line the shore, offering fresh catches of the day. Visitors can enjoy breathtaking sunsets while dining on the beach, making it a perfect spot for romantic dinners or family gatherings. The calm waters are ideal for swimming and water sports, while the nearby resorts provide luxurious accommodations and spa services. Whether you're looking to relax on the beach or indulge in delicious seafood, Jimbaran Beach has something for everyone.
       </p>
     </div>
   </div>
@@ -43,21 +43,33 @@
         <div class="flex flex-col md:flex-row items-center gap-6 min-w-full">
           <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-40 h-40 rounded-2xl object-cover" alt="Alexander Han">
           <div>
-         <p class="text-gray-800 text-lg">Prambanan Temple is an incredible site filled with ancient charm and spiritual energy. The intricate stone carvings and towering structures left me in awe. A must-visit destination for anyone exploring Indonesia’s rich cultural and historical heritage.</p>
+         <p class="text-gray-800 text-lg">Best 
+          beach in Bali! Jimbaran Beach offers a perfect blend of relaxation and adventure. The sunsets are absolutely stunning, and the seafood restaurants along the beach serve the freshest fish I've ever tasted. A must-visit for anyone traveling to Bali!</p>
+         </p>
+            
+         </p>
             <p class="font-bold text-blue-900 mt-3">Alexander Han</p>
           </div>
         </div>
         <div class="flex flex-col md:flex-row items-center gap-6 min-w-full">
           <img src="https://randomuser.me/api/portraits/men/65.jpg" class="w-40 h-40 rounded-2xl object-cover" alt="Michael Lee">
           <div>
-          <p class="text-gray-800 text-lg">I was amazed by the beauty of Prambanan. The temple complex is well preserved, and the surrounding scenery is peaceful. Watching the sunset behind the temple made the entire experience even more magical and unforgettable.</p>
+          <p class="text-gray-800 text-lg">
+           great 
+place to unwind and enjoy the beauty of Bali. The beach is clean, and the atmosphere is peaceful. I loved dining at the beachfront restaurants while watching the waves. The local culture and hospitality made my visit even more special. Highly recommend Jimbaran Beach!</p>
+          
+          </p>
+          </p>
             <p class="font-bold text-blue-900 mt-3">Michael Lee</p>
           </div>
         </div>
         <div class="flex flex-col md:flex-row items-center gap-6 min-w-full">
           <img src="https://randomuser.me/api/portraits/women/68.jpg" class="w-40 h-40 rounded-2xl object-cover" alt="Sophia Brown">
           <div>
-           <p class="text-gray-800 text-lg">Walking through Prambanan Temple felt like stepping into history. The grandeur of its architecture and the stories carved into the stones were breathtaking. It’s one of the most impressive cultural landmarks I’ve seen in Southeast Asia.</p>
+           <p class="text-gray-800 text-lg">sunset
+            at Jimbaran Beach is simply magical. The golden sands and gentle waves create a perfect backdrop for a relaxing day. I enjoyed swimming in the calm waters and exploring the nearby shops. The seafood dinner on the beach was the highlight of my trip. A beautiful place to create unforgettable memories!
+           </p>
+           </p>
             <p class="font-bold text-blue-900 mt-3">Sophia Brown</p>
           </div>
         </div>

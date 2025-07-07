@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/blur.css">
+    <title>NAVBAR</title>
 </head>
 <body>
-      <!-- Header -->
-  <header class="fixed top-0 left-0 w-full z-50 bg-white/20 hover:bg-white/60 shadow-xl duration-500">
+
+  <header class="navbar_artikel fixed top-0 left-0 w-full z-50 bg-white/20 hover:bg-white/60 shadow-xl duration-500">
    <div class="max-w-[1500px] mx-auto flex justify-between items-center px-6 py-4 w-full">
 
       <div class="flex items-center gap-3 group">
