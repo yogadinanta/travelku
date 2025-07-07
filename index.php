@@ -58,7 +58,7 @@
         class="absolute top-20 left-0 w-full md:static md:w-auto md:bg-transparent bg-white md:flex hidden transition-transform duration-300 transform md:transform-none py-2">
         <ul class="flex flex-col md:flex-row md:space-x-6 text-center md:text-left">
           <li><a href="#" class="block py-3 px-6 text-gray-600 hover:text-red-500">Home</a></li>
-          <li><a href="#" class="block py-3 px-6 text-gray-600 hover:text-red-500">About</a></li>
+          <li><a href="./assets//layout/about.php" class="block py-3 px-6 text-gray-600 hover:text-red-500">About</a></li>
           <li><a href="#service" class="block py-3 px-6 text-gray-600 hover:text-red-500">Services</a></li>
           <li><a href="./assets/kontak.html"
               class="block py-3 px-6 bg-[#02a7c5] text-white rounded-xl hover:bg-red-500 transition duration-300 font-bold">
@@ -71,7 +71,7 @@
 
   <div class="hero">
         <div class="slide active">
-            <img src="img/gwk.jpg" alt="Mountain view" class="slide-image">
+            <img src="./assets/./img/./img_gwk.webp" alt="Mountain view" class="slide-image">
             <div class="overlay"></div>
             <div class="content">
                 <div class="location">
@@ -90,7 +90,7 @@
         </div>
         
         <div class="slide">
-            <img src="./assets//img//labuan-bajo1.jpg" alt="Beach view" class="slide-image">
+            <img src="./assets//img/labuann_bajooo.jpg" alt="Beach view" class="slide-image">
             <div class="overlay"></div>
             <div class="content">
                 <div class="location">
@@ -303,7 +303,7 @@
   </section>
 
   <footer class="bg-gradient-to-tr from-[#02a7c5] to-[#07203E] text-white py-10 px-6 mt-10">
-    <div class="max-w-9xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+    <div class="max-w-full mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
       <div class="flex flex-col items-start">
         <img class="w-32 mb-3 drop-shadow-lg" src="img/icon/icon_png_travelku.png" alt="Travelku Logo">
         <p class="text-slate-100 text-sm max-w-xs">The best travel agency for your Bali adventure. Explore, discover, and enjoy unforgettable moments with us!</p>

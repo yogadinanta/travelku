@@ -3,6 +3,8 @@ const menu = document.getElementById("menu");
 const overlay = document.getElementById("overlay");
 const hamburgerIcon = document.getElementById("hamburger-icon");
 const closeIcon = document.getElementById("close-icon");
+const navList = document.getElementById("navList");
+
 
 menuButton.addEventListener("click", () => {
   menu.classList.toggle("hidden"); // Toggle menu
